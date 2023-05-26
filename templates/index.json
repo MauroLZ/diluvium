@@ -1,0 +1,505 @@
+{
+  "sections": {
+    "1655186926c306d030": {
+      "type": "image-banner",
+      "blocks": {
+        "1655186926dc359319-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Soluciones a inundaciones en México",
+            "heading_size": "h0"
+          }
+        },
+        "1655186926dc359319-1": {
+          "type": "text",
+          "settings": {
+            "text": "Ahora puedes proteger tu casa y negocio de estos desastres",
+            "text_style": "body"
+          }
+        },
+        "1655186926dc359319-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Ver productos",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "39190ca7-9c76-4f9a-a3b0-5e39b817767d": {
+          "type": "bottom_buttons",
+          "disabled": true,
+          "settings": {
+            "title": "Protege todo tipo de entradas",
+            "button_1_icon": "shopify:\/\/shop_images\/puerta_2.png",
+            "button_1_text": "Regulares",
+            "button_1_link": "shopify:\/\/products\/compuerta-anti-inundaciones",
+            "button_2_icon": "shopify:\/\/shop_images\/puerta_doble.png",
+            "button_2_text": "Amplias",
+            "button_2_link": "shopify:\/\/products\/compuerta-anti-inundaciones-hecha-a-la-medida",
+            "button_3_icon": "shopify:\/\/shop_images\/tuberia.png",
+            "button_3_text": "Tuberías",
+            "button_3_link": "shopify:\/\/products\/tapon-inflable-anti-inundaciones"
+          }
+        }
+      },
+      "block_order": [
+        "1655186926dc359319-0",
+        "1655186926dc359319-1",
+        "1655186926dc359319-2",
+        "39190ca7-9c76-4f9a-a3b0-5e39b817767d"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/IMG_con_agua_310f2949-5bfb-4c76-9fd1-c2a0d76b0bb5.png",
+        "image_mobile": "shopify:\/\/shop_images\/foto02.2_1_48c4a2b4-7cf9-4a92-a47a-18dd8ba0dc63.png",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "adapt_height_first_image": true,
+        "adapt_height_first_image_mobile": false,
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": false,
+        "show_text_below": false,
+        "custom_classes": "homepage-banner"
+      }
+    },
+    "16551872299b5550ca": {
+      "type": "image-with-text",
+      "blocks": {
+        "1655187229070991b2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "¿Sabías que...?",
+            "heading_size": "h1"
+          }
+        },
+        "1655187229070991b2-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Según Forbes, Aproximadamente <strong>2<\/strong> de cada <strong>10<\/strong> Mexicanos sufren de inundaciones cada año.<\/p><p>Si tu también sufres de estos desastres, no te preocupes, tenemos lo que necesitas para protegerte.<\/p><p>Con nuestras soluciones ante inundaciones podrás bloquear tus puertas, ventanas y tuberías, y evitar que el agua de lluvias entre a tu hogar poniendo en riesgo tu patrimonio y a tu familia.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "1655187229070991b2-0",
+        "1655187229070991b2-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/6_1_1.png",
+        "background_color": "#f3f3f3",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "mobile_content_alignment": "center",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "classes": "has-vivido-inundacion"
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Lo más vendido",
+        "heading_size": "h1",
+        "heading_color": "#003667",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "los-mas-vendidos",
+        "products_to_show": 2,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "outline",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 100,
+        "padding_bottom": 88
+      }
+    },
+    "1655432838ef615b55": {
+      "type": "image-with-text",
+      "blocks": {
+        "1655432838ee122841-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "¿Porqué comprar con nosotros?",
+            "heading_size": "h1"
+          }
+        },
+        "012ab737-4bca-4111-a9a6-cda4bb7d8ac5": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/certificado-de-garantia.png",
+            "title": "Funcionamiento comprobado",
+            "description": "<p>Sometemos nuestros productos a las más duras pruebas para garantizar su calidad y así brindarte la solución definitiva ante inundaciones.<\/p>"
+          }
+        },
+        "b67bd3a5-5a9e-41e2-86e4-45134973fdce": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/envio.png",
+            "title": "Garantía de devolución",
+            "description": "<p>Si la puerta que compraste no es del tamaño correcto, te aseguramos el envío del tamaño adecuado.<\/p>"
+          }
+        },
+        "dbb00631-8b31-48d3-8577-04313166d396": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/ahorro_dinero.png",
+            "title": "Evita pérdidas económicas",
+            "description": "<p>No dejes que te pase lo mismo que en cada época de lluvias, protege tu patrimonio y a tu familia.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1655432838ee122841-0",
+        "012ab737-4bca-4111-a9a6-cda4bb7d8ac5",
+        "b67bd3a5-5a9e-41e2-86e4-45134973fdce",
+        "dbb00631-8b31-48d3-8577-04313166d396"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Frame_248_ligero.png",
+        "background_color": "#f3f3f3",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "mobile_content_alignment": "center",
+        "padding_top": 72,
+        "padding_bottom": 0,
+        "classes": "porque-comprar"
+      }
+    },
+    "316e9bef-f4f3-4db1-bc72-13b038fd2407": {
+      "type": "table-best-option",
+      "settings": {
+        "title": "¿Por qué somos tu mejor opción?"
+      }
+    },
+    "1664420068372bc560": {
+      "type": "testimonials",
+      "disabled": true,
+      "blocks": {
+        "34f4a338-fb32-4b0a-a9a7-56defd037ee1": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "“Me encantaron los productos y la atención, tienen calidad y era lo que necesitaba”.",
+            "author": "- Gilberto Ruiz"
+          }
+        },
+        "592fb82f-9807-4163-b501-685a6d79c4d0": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "“Resolvieron un gran problema que tenía años batallando, me ayudaron a protefegerme”.",
+            "author": "- Felipe Cázarez"
+          }
+        },
+        "f86a6acb-5b19-46dc-a2ef-9962326ed256": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "“Me siento más segura, porque cada vez que llovía era un desastre, el agua se mete por todas partes.”",
+            "author": "- María E. Ortiz"
+          }
+        },
+        "8c1c701b-2b42-4bd5-b8c9-d920c30994fc": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "“Me emociona el hecho de poder descansar tranquilo sabiendo que no va a entrar el agua”.",
+            "author": "- Juan Reimerz"
+          }
+        },
+        "e1c313c2-9f07-403e-bbb9-f8beb25c4a8f": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "“Lo considero una inversión, que al principio puede parecer elevada pero se que a la larga me evitará muchos problemas ”",
+            "author": "- Antonio de la Garza"
+          }
+        },
+        "e7c29645-39d1-47ef-adca-4aef3af8b674": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "“Llevo más de 20 años con este problema, me da gusto que finalmente he encontrado la solución”",
+            "author": "- Julieta Ramos"
+          }
+        },
+        "53e156f8-7cba-4cd4-b5e8-e6dfe66cc64f": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "“Garantizo que funciona, no es fácil de creer pero yo tengo dos y ambas funcionaron perfecto”.",
+            "author": "- Karina M. Sánchez"
+          }
+        },
+        "162e8303-2bc7-4e99-8aba-83643c025eea": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "“Normalmente entraban 15cm de agua a la casa, ya no entra ni 1cm, lo recomiendo 100%”",
+            "author": "- Julián Antonio"
+          }
+        },
+        "f7e516cc-b003-46bc-8073-07f07faf35ed": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "“Muy buen producto y muy buen servicio, llegó todo a tiempo y sin ningún problema.”",
+            "author": "- Rodrigo Paredes"
+          }
+        }
+      },
+      "block_order": [
+        "34f4a338-fb32-4b0a-a9a7-56defd037ee1",
+        "592fb82f-9807-4163-b501-685a6d79c4d0",
+        "f86a6acb-5b19-46dc-a2ef-9962326ed256",
+        "8c1c701b-2b42-4bd5-b8c9-d920c30994fc",
+        "e1c313c2-9f07-403e-bbb9-f8beb25c4a8f",
+        "e7c29645-39d1-47ef-adca-4aef3af8b674",
+        "53e156f8-7cba-4cd4-b5e8-e6dfe66cc64f",
+        "162e8303-2bc7-4e99-8aba-83643c025eea",
+        "f7e516cc-b003-46bc-8073-07f07faf35ed"
+      ],
+      "settings": {
+        "title": "Lo que opinan nuestros clientes"
+      }
+    },
+    "56c39255-f588-4791-bb36-d7d5c9f7cb7d": {
+      "type": "testimonials",
+      "disabled": true,
+      "custom_css": [
+
+      ],
+      "settings": {
+        "title": "Algunos clientes satisfechos"
+      }
+    },
+    "c76da3e3-0258-4b06-aef1-98a0f531a530": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16139322786012__c76da3e3-0258-4b06-aef1-98a0f531a530-1681669262a252d5be-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p><strong>Personas y empresas que confían en nosotros<\/strong><\/p>",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "template--16139322786012__c76da3e3-0258-4b06-aef1-98a0f531a530-1681669262a252d5be-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 72,
+        "padding_bottom": 8,
+        "custom_classes": ""
+      }
+    },
+    "1681668402596a5f60": {
+      "type": "apps",
+      "blocks": {
+        "ff2ddcfa-38ea-40a5-b220-869154882b44": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-gallery-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "maxWidth": 1100,
+            "borderRadius": 8,
+            "itemsPerView": 5,
+            "imageRatio": "1",
+            "reviewerNameColor": "#ffffff",
+            "starsColor": "#ffffff",
+            "arrows_backgroundColor": "#ffffff",
+            "arrows_iconColor": "#9a9a9a",
+            "shadow": "offset-dark",
+            "border_active": false,
+            "border_width": 1,
+            "border_color": "#000000",
+            "productIds": ""
+          }
+        }
+      },
+      "block_order": [
+        "ff2ddcfa-38ea-40a5-b220-869154882b44"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "165558713225a8d0b6": {
+      "type": "logos",
+      "blocks": {
+        "09620e80-39d0-45be-a900-795423d99def": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Logo_MMA.png"
+          }
+        },
+        "4406f7dd-b437-4805-846c-e7cd01ca5ded": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_129.png"
+          }
+        },
+        "c7160f2d-c371-4bb4-b693-ff20a1547a76": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SUNWIRE_CLEAN_NEGRO_2.png"
+          }
+        },
+        "45318799-3c80-4d04-a28d-a981772b1245": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_125.png"
+          }
+        },
+        "da544e28-4bc6-4fe0-b465-af4d40116a5d": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_130.png"
+          }
+        },
+        "b546a04a-87ca-4a40-bcf7-11dce226c3ea": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Logo_MMA.png"
+          }
+        },
+        "7605af42-3546-4a90-b279-40815324c799": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_129.png"
+          }
+        },
+        "1bf0b60a-ab98-4d58-bcef-91617c856b18": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SUNWIRE_CLEAN_NEGRO_2.png"
+          }
+        },
+        "4aefa786-5247-4f5e-bdf9-b35ea75dd6ff": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_125.png"
+          }
+        },
+        "7ec630ba-7810-47a5-9664-637914d302fa": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_130.png"
+          }
+        }
+      },
+      "block_order": [
+        "09620e80-39d0-45be-a900-795423d99def",
+        "4406f7dd-b437-4805-846c-e7cd01ca5ded",
+        "c7160f2d-c371-4bb4-b693-ff20a1547a76",
+        "45318799-3c80-4d04-a28d-a981772b1245",
+        "da544e28-4bc6-4fe0-b465-af4d40116a5d",
+        "b546a04a-87ca-4a40-bcf7-11dce226c3ea",
+        "7605af42-3546-4a90-b279-40815324c799",
+        "1bf0b60a-ab98-4d58-bcef-91617c856b18",
+        "4aefa786-5247-4f5e-bdf9-b35ea75dd6ff",
+        "7ec630ba-7810-47a5-9664-637914d302fa"
+      ],
+      "settings": {
+      }
+    },
+    "165543631478c9c8e0": {
+      "type": "donations",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "bcd8b3a8-6688-4adb-8816-864f4b6f0a4c": {
+      "type": "newsletter",
+      "disabled": true,
+      "blocks": {
+        "template--16139322786012__bcd8b3a8-6688-4adb-8816-864f4b6f0a4c-166554521459ff9de8-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ahorra un 5% en tu primera compra",
+            "heading_size": "h1"
+          }
+        },
+        "template--16139322786012__bcd8b3a8-6688-4adb-8816-864f4b6f0a4c-166554521459ff9de8-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Suscríbete y te enviaremos un cupón a tu correo<\/p>"
+          }
+        },
+        "template--16139322786012__bcd8b3a8-6688-4adb-8816-864f4b6f0a4c-166554521459ff9de8-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--16139322786012__bcd8b3a8-6688-4adb-8816-864f4b6f0a4c-166554521459ff9de8-0",
+        "template--16139322786012__bcd8b3a8-6688-4adb-8816-864f4b6f0a4c-166554521459ff9de8-1",
+        "template--16139322786012__bcd8b3a8-6688-4adb-8816-864f4b6f0a4c-166554521459ff9de8-2"
+      ],
+      "settings": {
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "1655510331beb5ab3e": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Consejos para protegerte",
+        "description": "",
+        "heading_size": "h1",
+        "blog": "blog",
+        "color_scheme": "background-1",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 68,
+        "padding_bottom": 68
+      }
+    }
+  },
+  "order": [
+    "1655186926c306d030",
+    "16551872299b5550ca",
+    "featured_collection",
+    "1655432838ef615b55",
+    "316e9bef-f4f3-4db1-bc72-13b038fd2407",
+    "1664420068372bc560",
+    "56c39255-f588-4791-bb36-d7d5c9f7cb7d",
+    "c76da3e3-0258-4b06-aef1-98a0f531a530",
+    "1681668402596a5f60",
+    "165558713225a8d0b6",
+    "165543631478c9c8e0",
+    "bcd8b3a8-6688-4adb-8816-864f4b6f0a4c",
+    "1655510331beb5ab3e"
+  ]
+}

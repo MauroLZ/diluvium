@@ -1,0 +1,103 @@
+<style>
+    .donations {
+        background-color: #0A559A;
+        color: white;
+        padding: 4rem 0;
+    }
+
+    @media screen and (max-width: 749px) {
+        .donations {
+            padding: 2rem 0;
+        }
+    }
+    .donations__container {
+        /* width: 70%; */
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    @media screen and (max-width: 749px) {
+        .donations__container {
+            width: 90%;
+        }
+    }
+    .donations__top {
+        display: flex;
+        align-items: center;
+        column-gap: 2rem;
+        justify-content: center;
+    }
+    .donations__percent {
+        font-size: 8rem;
+        font-weight: 500;
+    }
+    @media screen and (max-width: 749px) {
+        .donations__percent {
+            font-size: 5rem;
+        }
+    }
+    @media screen and (max-width: 749px) {
+        .donations__percent {
+            font-size: 4rem;
+        }
+    }
+    .donations__text {
+        font-size: 3.5rem;
+        line-height: 1.1;
+        font-weight: 500;
+        max-width: 800px;
+        margin-bottom: 1rem;
+    }
+    @media screen and (max-width: 749px) {
+        .donations__text {
+            font-size: 2.5rem;
+        }
+    }
+    @media screen and (max-width: 549px) {
+        .donations__text {
+            font-size: 2rem;
+        }
+    }
+    .donations__hashtag {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    @media screen and (max-width: 749px) {
+        .donations__hashtag {
+            text-align: center;
+            font-size: 1.8rem;
+        }
+    }
+
+    @media screen and (max-width: 549px) {
+        .donations__hashtag {
+            text-align: center;
+            font-size: 1.5srem;
+        }
+    }
+</style>
+<div class="donations">
+    <div class="page-width">
+        <div class="donations__container">
+            <div class="donations__top">
+                <div class="donations__percent">5%</div>
+                <div class="donations__text">de las utilidades es donada a personas con problemas de inundaciones en México</div>
+            </div>
+            <div class="donations__bottom">
+                <div class="donations__hashtag">#PorUnMexicoMejor</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Donations",
+    "presets": [{
+        "name": "Donations"
+    }],
+    "templates": ["index"]
+}
+{% endschema %}

@@ -1,0 +1,115 @@
+{{ 'tabby-ui.min.css' | asset_url | stylesheet_tag }}
+{{ 'section-tabs.css' | asset_url | stylesheet_tag }}
+
+<section class="tabs">
+    <div class='tabs__container page-width' data-toggle="tabslet">
+        <ul class="tabs__buttons tab__buttons--{{ section.id }}"  data-tabs>
+        {%- for block in section.blocks -%}
+            <li class="tabs__button"><a {% if forloop.first %}data-tabby-default{% endif %} href="#{{block.id}}">{{ block.settings.tab_title }}</a></li>
+        {%- endfor -%}
+        </ul>
+        {%- for block in section.blocks -%}
+            {%- if block.type == "video" -%}
+                <div class="tabs__tab" id="{{ block.id }}" {{ block.shopify_attributes }}>
+                    {% render 'video', heading: block.settings.heading, heading_size: 'h2', cover_image: block.settings.cover_image, video_url: block.settings.video_url, description: block.settings.description, %}
+                </div>
+            {%- elsif block.type == "table" -%}
+                <div class="tabs__tab" id="{{ block.id }}" {{ block.shopify_attributes }}>
+                    <div class="tabs__table">
+                        {% assign table_titles = product.metafields.tabs.table_titles %}
+                        {% assign table_content = product.metafields.tabs.table_content %}
+                        {% assign titles_size = table_titles.value.size %}
+                        {% assign content_size = table_content.value.size %}
+                        {% if titles_size == content_size %}
+                        <div class="tabs__columns">
+                            {% for title in table_titles.value %}
+                                <div class="tabs__row">
+                                    <div class="tabs__cell tabs__cell--title">{{ table_titles.value[forloop.index0] }}</div>
+                                    <div class="tabs__cell tabs__cell--content">{{ table_content.value[forloop.index0] }}</div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                        {% else %}
+                            <p>Size of table titles and content doesn't match.</p>
+                        {% endif %}
+                    </div> 
+                </div>
+            {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>    
+</section>
+{{ 'tabby.polyfills.min.js' | asset_url | script_tag }}
+<script>
+	var tabs = new Tabby('[data-tabs]');
+</script>
+{% if request.design_mode %}
+<script>
+    function reloadTabs(e) {
+        var tabs = new Tabby('.tab__buttons--{{ section.id }}')
+    }
+    document.addEventListener("shopify:section:load", e => reloadTabs(e));
+
+    document.addEventListener("shopify:block:select", e => console.log(e.target))
+</script>
+{% endif %}
+{% schema %}
+{
+    "name": "Tabs",
+    "settings": [{
+        "id": "title",
+        "label": "Title",
+        "type": "text"
+    }],
+    "blocks": [{
+        "type": "table",
+        "name": "Table",
+        "settings": [{
+            "label": "Tab title",
+            "id": "tab_title",
+            "type": "text"
+        }]
+    }, {
+        "type": "video",
+        "name": "Video",
+        "settings": [{
+            "label": "Tab title",
+            "id": "tab_title",
+            "type": "text"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "default": "Video",
+            "label": "t:sections.video.settings.heading.label"
+          },
+          {
+            "type": "image_picker",
+            "id": "cover_image",
+            "label": "t:sections.video.settings.cover_image.label"
+          },
+          {
+            "type": "video_url",
+            "id": "video_url",
+            "accept": [
+              "youtube",
+              "vimeo"
+            ],
+            "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "label": "t:sections.video.settings.video_url.label",
+            "placeholder": "t:sections.video.settings.video_url.placeholder",
+            "info": "t:sections.video.settings.video_url.info"
+          },
+          {
+            "type": "text",
+            "id": "description",
+            "label": "t:sections.video.settings.description.label",
+            "info": "t:sections.video.settings.description.info"
+          }
+        ]
+    }],
+    "presets": [{
+        "name": "Tabs"
+    }]
+}
+{% endschema %}

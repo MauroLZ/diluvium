@@ -1,0 +1,118 @@
+.plug-table {
+    padding: 80px 0;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.plug-table .h1 {
+    margin-top: 0;
+}
+@media screen and (max-width: 749px) {
+    .plug-table__table { 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .plug-table__row {
+        flex-direction: column;
+    }
+}
+.plug-table__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e8f3fe;
+    border: 2px solid #3373c4;
+}
+@media screen and (max-width: 749px) {
+    .plug-table__row {
+        border-right: 0;
+        background-color: #f4f4f4;
+    }
+    .plug-table__row:not(.plug-table__row--measures) {
+        border-right: 2px solid #3373c4;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    .plug-table__row:first-child {
+        border-bottom: 2px solid #3373c4;
+        order: 1;
+    }
+}
+.plug-table__row .plug-table__cell:nth-child(2) {
+    border-left: 2px solid #3373c4;
+}
+@media screen and (max-width: 749px) {
+    .plug-table__row .plug-table__cell:nth-child(2) {
+        border-left: none;
+    }
+}
+.plug-table__row .plug-table__cell:first-child {
+    border: none;
+}
+@media screen and (max-width: 749px) {
+    .plug-table__row .plug-table__cell:first-child {
+        border-bottom: 2px solid #3373c4!important;
+        width: 100%;
+    }
+}
+.plug-table__row:first-child .plug-table__cell {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.plug-table__row--measures .plug-table__cell{
+    padding: 2rem 0;
+}
+@media screen and (min-width: 750px) {
+    .plug-table__row--measures {
+        border-top: none;
+    }
+}
+@media screen and (max-width: 749px) {
+    .plug-table__row--measures .plug-table__cell:first-child {
+        flex: none;
+    }
+}
+.plug-table__cell {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-right: 2px solid #3373c4;
+}
+@media screen and (max-width: 749px) {
+    .plug-table__cell {
+        border-right: 0;
+        width: 100%;
+    }
+    .plug-table__cell:not(:first-child) {
+        border-bottom: 2px solid #3373c4;
+    }
+    .plug-table__cell:last-child {
+        border-bottom: none;
+    }
+    .plug-table__cell>div {
+        font-size: 1.8rem;
+    }
+    .plug-table__cell--heading {
+        font-size: 1.9rem;
+    }
+}
+.plug-table__cell:last-child {
+    border-right: none;
+}
+.plug-table__cell:not(:first-child) {
+    background-color: white;
+}
+
+@media screen and (max-width: 749px) {
+    .plug-table__cell:not(:first-child) {
+        background-color: transparent;
+    }
+}
+
+.plug-table__cell img {
+    width: 100%;
+    max-width: 200px;
+}
+

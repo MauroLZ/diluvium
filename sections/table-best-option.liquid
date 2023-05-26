@@ -1,0 +1,55 @@
+{{ 'table-best-option.css' | asset_url | stylesheet_tag }}
+
+<div class="table-best-option__container">
+    <section class="table-best-option page-width">
+        <h2 class="h1 table-best-option__title">{{ section.settings.title }}</h2>
+        <div class="table-best-option__table">
+            <div class="table-best-option__row table-best-option__row-header">
+                <div></div>
+                <div style="background-color:#F8A01D;color: white;font-size: 20px;font-weight: bold;">Compuerta anti inundaciones</div>
+                <div style="font-size: 18px;align-self: self-end;">Sacos de arena</div>
+                <div style="font-size: 18px;align-self: self-end;">Tablas de madera</div>
+            </div>
+            <div class="table-best-option__row">
+                <div>Rápida instalación</div>
+                <div class="table-best-option__check-cell"><img src="{{ 'check-icon.svg' | asset_url }}" /></div>
+                <div><img src="{{ 'close-circle.svg' | asset_url }}" /></div>
+                <div><img src="{{ 'close-circle.svg' | asset_url }}" /></div>
+            </div>
+            <div class="table-best-option__row">
+                <div>Bloquea el 100% del agua</div>
+                <div class="table-best-option__check-cell"><img src="{{ 'check-icon.svg' | asset_url }}" /></div>
+                <div><img src="{{ 'close-circle.svg' | asset_url }}" /></div>
+                <div><img src="{{ 'close-circle.svg' | asset_url }}" /></div>
+            </div>
+            <div class="table-best-option__row">
+                <div>Fácil de quitar</div>
+                <div class="table-best-option__check-cell"><img src="{{ 'check-icon.svg' | asset_url }}" /></div>
+                <div><img src="{{ 'close-circle.svg' | asset_url }}" /></div>
+                <div><img src="{{ 'close-circle.svg' | asset_url }}" /></div>
+            </div>
+            <div class="table-best-option__row">
+                <div>No deja marcas en la entrada</div>
+                <div class="table-best-option__check-cell"><img src="{{ 'check-icon.svg' | asset_url }}" /></div>
+                <div><img src="{{ 'check-icon.svg' | asset_url }}" /></div>
+                <div><img src="{{ 'close-circle.svg' | asset_url }}" /></div>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% schema %}
+{
+    "name": "Best option table",
+    "settings": [{
+        "label": "Title",
+        "type": "text",
+        "default": "¿Por qué somos tu mejor opción?",
+        "id": "title"
+    }],
+    "presets": [{
+        "name": "Best option table"
+    }],
+    "templates": ["index", "product"]
+}
+{% endschema %}

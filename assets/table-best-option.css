@@ -1,0 +1,57 @@
+.table-best-option__container {
+    background-color: #F4F4F4;
+}
+.table-best-option {
+    padding: 80px 40px;
+}
+.table-best-option__table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 2px;
+}
+.table-best-option__title {
+    text-align: center;
+    margin-top: 0;
+}
+.table-best-option__row.table-best-option__row-header {
+    text-align: center;
+    background-color: #F4F4F4;
+}
+.table-best-option__row-header>div {
+    background-color: #ddd;
+    color: #292929;
+    line-height: 1.4;
+    padding: 2rem 0;
+}
+.table-best-option__row-header>div:empty {
+    background-color: transparent;
+}
+.table-best-option__check-cell {
+    background-color: #fef8ef;
+}
+.table-best-option__row {
+    display: flex;
+    border-bottom: 1px solid #cecdcd;
+    background-color: white;
+}
+.table-best-option__row:first-child,
+.table-best-option__row:last-child {
+    border-bottom: none;
+}
+.table-best-option__row>div {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+.table-best-option__row>div:first-child {
+    justify-content: flex-start;
+}
+@media screen and (max-width: 749px) {
+    .table-best-option__row>div:last-child {
+        display: none;
+    }
+}

@@ -1,0 +1,53 @@
+{{ 'dimensions-with-image.css' | asset_url | stylesheet_tag }}
+<section class="dimensions-with-image" id="dimensiones">
+<div class="page-width">
+    <div class="dimensions-with-image__container">
+        <div class="dimensions-with-image__image">
+            <div class="h2">{{ section.settings.image_title}}</div>
+            <img src="{{ section.settings.image | img_url: '900x' }}" alt="">
+        </div>
+        <div class="dimensions-with-image__table">
+            <div class="dimensions-with-image__head">
+                <div class="dimensions-with-image__cell">Tamaño de la compuerta</div>
+                <div class="dimensions-with-image__cell">Ancho de tu<br> entrada</div>
+            </div>
+            <div class="dimensions-with-image__row">
+                <div class="dimensions-with-image__title">Chica</div>
+                <div class="dimensions-with-image__content">76cm expandible a 86cm</div>
+            </div>
+            <div class="dimensions-with-image__row">
+                <div class="dimensions-with-image__title">Mediana</div>
+                <div class="dimensions-with-image__content">87cm expandible a 97cm</div>
+            </div>
+            <div class="dimensions-with-image__row">
+                <div class="dimensions-with-image__title">Grande</div>
+                <div class="dimensions-with-image__content">97cm expandible a 108cm</div>
+            </div>
+            <div class="dimensions-with-image__row">
+                <div class="dimensions-with-image__title">Extra Grande</div>
+                <div class="dimensions-with-image__content">109cm expandible a 120cm</div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+{% schema %}
+{
+    "settings": [
+        {
+            "type": "text",
+            "id": "image_title",
+            "label": "Title"
+        },
+       {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+       }
+    ],
+    "presets": [{
+        "name": "Dimensions with image"
+    }]
+}
+{% endschema %}

@@ -1,0 +1,92 @@
+{{ 'slick.css' | asset_url | stylesheet_tag }}
+{{ 'slick-theme.css' | asset_url | stylesheet_tag }}
+
+<style>
+    .logos {
+        padding: 8rem 0;
+    }
+    @media screen and (max-width: 749px) {
+        .logos {
+            padding: 4rem 0;
+        }
+    }
+    .logos__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 2rem;
+    }
+
+    /* .logos .slick-list {
+        width: 100%;
+    } */
+    .logos .slick-track {
+        display: flex;
+        align-items: center;
+        column-gap: 2rem;
+        /* width: 100%; */
+        /* max-width: var(--page-width); */
+    }
+    .logos__logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logos__logo img {
+        width: 100%;
+        max-width: 150px;
+        margin: 0 auto;
+        max-height: 110px;
+    }
+</style>
+
+<section class="logos">
+    <div class="logos__container slick-width">
+        {%- for block in section.blocks -%}
+            {%- if block.type == 'logo' -%}
+                <div class="logos__logo">
+                    <img src="{{ block.settings.image | img_url: '300x' }}" alt="">
+                </div>
+            {%- endif -%}
+        {%- endfor -%}
+    </div>
+</section>
+
+<script>
+    $(document).ready(function () {
+        $('.logos__container').slick({
+            slidesToShow: 7,
+            arrows: false,
+            dots: false,
+            autoplay: true,
+            responsive: [
+                {
+                    breakpoint: 750,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                }
+            ]
+        });
+    });
+</script>
+
+{% schema %}
+{
+    "name": "Logos",
+    "blocks": [
+    {
+        "type": "logo",
+        "name": "Logo",
+        "settings": [{
+            "type": "image_picker",
+            "label": "Logo",
+            "id": "image"
+        }]
+    }
+    ],
+    "presets": [{
+        "name": "Logos"
+    }]
+}
+{% endschema %}

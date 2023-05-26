@@ -1,0 +1,230 @@
+<style>
+    .contact-page {
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 3fr 4fr;
+    }
+    @media screen and (max-width: 749px) {
+        .contact-page {
+            grid-template-columns: 1fr;
+        }
+    }
+    .h1, .h2 {
+        color: #0A559A;
+    }
+    .contact-page__content {
+        width: 85%;
+        margin: 0 auto;
+    }
+    @media screen and (min-width: 750px) {
+        .contact-page__image-content {
+            display: none;
+        }
+    }
+    @media screen and (max-width: 749px) {
+        .contact-page__image-content {
+            display: block;
+        }
+        .contact-page__content {
+            width: 100%;
+        }
+        .container {
+            width: 85%;
+            margin: 0 auto;
+        }
+    }
+    .contact-page__content h1 {
+        margin-bottom: 0;
+    }
+    .contact-page__asesor-title {
+        margin-top: 4rem;
+    }
+    .contact-page__description {
+        margin-top: 0;
+    }
+    .contact-page__contact-form-title {
+        margin-top: 4rem;
+    }
+    .contact-page__image {
+        background-image: url('{{ section.settings.image | img_url: "master"}}');
+        background-position: left center;
+        background-size: cover;
+    }
+    .contact-page__whatsapp-button {
+        background-color: #29A71A;
+        color: white;
+        padding: 1.5rem 3rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 1.5rem;
+        border-radius: 4px;
+        text-decoration: none;
+    }
+    .contact-page__contact-info {
+        padding-left: 0;
+        margin-top: 4rem;
+    }
+    .contact-page__contact-info-item {
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    .contact-page__contact-form {
+        max-width: 600px;
+    }
+    .contact-form__field {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-form__field input,
+    .contact-form__field textarea {
+        box-shadow: none;
+        outline: none;
+    }
+
+    .contact-form__field input,
+    .contact-form__field textarea {
+        padding: 1rem;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-radius: 8px;
+        border: 1px solid #B3B3B3;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .contact-form__field textarea {
+        min-height: 100px;
+    }
+
+    .contact-form__field label {
+        margin-bottom: 0.5rem;
+    }
+    .contact-form__submit {
+        font-weight: bold;
+        background-color: #F8A01D;
+        border: none;
+        padding: 1.5rem 2rem;
+        font-size: 1.8rem;
+        color: white;
+        min-width: 250px;
+        text-align: center;
+        border-radius: 4px;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
+    .contact-page__image-content img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .contact-form__submit:hover {
+        cursor: pointer;
+    }
+    .footer {
+        margin-top: 0!important;
+    }
+</style>
+<div class="contact-page">
+    <div class="contact-page__image">
+    </div>
+    <div class="contact-page__content">
+        <div class="container">
+            <h1 class="h1">Contacto</h1>
+            <p class="contact-page__description">{{ section.settings.description }}</p>
+            <h2 class="h2 contact-page__asesor-title">Contacta a un asesor</h2>
+            <a class="contact-page__whatsapp-button" target="_blank" href="{{ section.settings.button_url }}">{{ section.settings.button_text }} {% render 'icon-whatsapp' %}</a>
+            <ul class="contact-page__contact-info">
+                <li class="contact-page__contact-info-item">{% render 'icon-email' %} {{ section.settings.email }}</li>
+                <li class="contact-page__contact-info-item">{% render 'icon-phone' %} {{ section.settings.phone }}</li>
+                <li class="contact-page__contact-info-item">{% render 'icon-location' %} {{ section.settings.location }}</li>
+            </ul>
+        </div>
+        <div class="contact-page__image-content">
+            <img src="{{ section.settings.image | img_url: "master"}}" alt="">
+        </div>
+        <div class="container">
+            <h2 class="h2 contact-page__contact-form-title">Envíanos un mensaje</h2>
+            {%- form 'contact', id: 'ContactForm', class: 'contact-page__contact-form' -%}
+            {%- if form.posted_successfully? -%}
+              <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</h2>
+            {%- elsif form.errors -%}
+              <div class="form__message">
+                <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>{% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }}</h2>
+              </div>
+              <ul class="form-status-list caption-large" role="list">
+                <li>
+                  <a href="#ContactForm-email" class="link">
+                    {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}
+                  </a>
+                </li>
+              </ul>
+            {%- endif -%}
+    
+              <div class="contact-form__fields">
+                <div class="contact-form__field">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" autocomplete="name" name="contact[Nombre Completo]" placeholder="Nombre completo" />
+                </div>
+                <div class="contact-form__field">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" autocomplete="email" name="contact[email]" placeholder="ejemplo@correo.com" />
+                </div>
+                <div class="contact-form__field">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="name" autocomplete="name" name="contact[Asunto]" placeholder="Cotización" />
+                </div>
+                <div class="contact-form__field">
+                    <label for="name">Mensaje</label>
+                    <textarea type="text" id="name" autocomplete="name" name="contact[Mensaje]" placeholder="Escribe tu mensaje"></textarea>
+                </div>
+              </div>
+              <button class="contact-form__submit" type="submit">Enviar mensaje</button>
+            
+            {%- endform -%}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+    "settings": [{
+        "id": "image",
+        "label": "Contact page image",
+        "type": "image_picker"
+    }, {
+        "type": "textarea",
+        "id": "description",
+        "label": "Description",
+        "default": "¿Tienes preguntas o comentarios? Comunícate con nosotros"
+    },{
+        "type": "text",
+        "id": "button_text",
+        "label": "Contact button text",
+        "default": "Enviar mensaje"
+    }, {
+        "type": "url",
+        "id": "button_url",
+        "label": "Contact button url"
+    }, {
+        "type": "text",
+        "id": "email",
+        "label": "Contact email",
+        "default": "contacto@evitainundarte.com"
+    }, {
+        "type": "text",
+        "id": "phone",
+        "label": "Contact phone",
+        "default": "(668) 241 9579"
+    }, {
+        "type": "text",
+        "id": "location",
+        "label": "Location",
+        "default": "Los Mochis, Sinaloa, México"
+    }],
+    "presets": [{
+        "name": "Contact page"
+    }],
+    "templates": ["page"]
+}
+{% endschema %}

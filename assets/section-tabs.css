@@ -1,0 +1,77 @@
+.tabs {
+    margin-top: 4rem;
+}
+.tabs__buttons {
+    display: flex;
+}
+.tabs__button {
+    flex: 1;
+    display: flex;
+}
+.tabs__button a {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.tabs__button>a {
+    border: none!important;
+}
+.tabs__button>a:hover {
+    background: none!important;
+}
+.tabs__button a {
+    color: #666666;
+    font-size: 2rem;
+    font-weight: 500;
+}
+@media screen and (max-width: 540px) {
+    .tabs__button a {
+        font-size: 1.6rem;
+    }
+}
+.tabs__button [role=tab][aria-selected=true] {
+    border-bottom: 3px solid #0A559A!important;
+    color: #0A559A;
+    background-color: white!important;
+}
+.tabs__button [role=tab][aria-selected=false] {
+    border-bottom-color:#666666!important;
+}
+.tabs__table {
+    margin-top: 4rem;
+}
+
+.tabs__tab {
+    padding-top: 6rem;
+}
+.tabs__columns {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    column-gap: 2rem;
+}
+@media screen and (max-width: 749px) {
+    .tabs__columns {
+        grid-template-columns: 1fr;
+        grid-auto-flow:unset;
+    }
+}
+
+.tabs__row:nth-child(odd) {
+    background-color: #f4f4f4;
+}
+.tabs__row {
+    display: flex;
+    padding: 1rem 1.5rem;
+}
+.tabs__cell--title {
+    font-weight: bold;
+    flex: 2;
+}
+.tabs__cell--content {
+    flex: 4;
+}
+.slick-dots[role=tablist] {
+    border-bottom: none;
+}

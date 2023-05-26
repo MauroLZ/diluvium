@@ -1,0 +1,36 @@
+{{ 'plug-table.css' | asset_url | stylesheet_tag }}
+<section class="plug-table">
+    <div class="page-width">
+        <h3 class="h1" style="text-align: center;">{{ section.settings.title }}</h3>
+        <div class="plug-table__table plug-table__table--desktop">
+            <div class="plug-table__row">
+                <div class="plug-table__cell plug-table__cell--heading" style="background-color: #e8f3fe;font-weight: bold;">Tapón</div>
+                <div class="plug-table__cell"><img src="{{ 'tapon_3.png' | asset_img_url: '512x' }}" /></div>
+                <div class="plug-table__cell"><img src="{{ 'tapon_2.png' | asset_img_url: '512x' }}" /></div>
+                <div class="plug-table__cell"><img src="{{ 'tapon_1.png' | asset_img_url: '512x' }}" /></div>
+            </div>
+            <div class="plug-table__row plug-table__row--measures">
+                <div class="plug-table__cell plug-table__cell--heading" style="background-color: #e8f3fe;font-weight: bold;">Diámetro del tapón</div>
+                <div class="plug-table__cell"><div><b>2 in</b><br/>(5cm)</div></div>
+                <div class="plug-table__cell"><div><b>3 in</b><br/>(7.5cm)</div></div>
+                <div class="plug-table__cell"><div><b>4 in</b><br/>(10cm)</div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "Plug table",
+    "settings": [{
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Medidas y tamaños"
+    }],
+    "presets": [{
+        "name": "Plug table"
+    }],
+    "templates": ["product"]
+}
+{% endschema %}
