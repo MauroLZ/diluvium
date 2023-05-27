@@ -50,8 +50,16 @@
 .table-best-option__row>div:first-child {
     justify-content: flex-start;
 }
+
+@media screen and (max-width: 749px) {
+    .table-best-option__container {
+        display: none;
+    }
+}
+
+/*
 @media screen and (max-width: 749px) {
     .table-best-option__row>div:last-child {
         display: none;
     }
-}
+}*/
