@@ -53,7 +53,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/IMG_con_agua_310f2949-5bfb-4c76-9fd1-c2a0d76b0bb5.png",
-        "image_mobile": "shopify:\/\/shop_images\/foto02.2_1_48c4a2b4-7cf9-4a92-a47a-18dd8ba0dc63.png",
+        "image_mobile": "shopify:\/\/shop_images\/Frame234.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": true,
@@ -68,34 +68,34 @@
         "custom_classes": "homepage-banner"
       }
     },
-    "a66cb840-94d8-446d-a5ef-e451efe3cddc": {
-      "type": "multicolumn",
+    "c570d919-4de5-490c-bd32-ef7a2e779b05": {
+      "type": "alternate-multicolumn",
       "blocks": {
-        "template--16824071520476__a66cb840-94d8-446d-a5ef-e451efe3cddc-1685150708b5945de5-0": {
+        "template--16824071520476__c570d919-4de5-490c-bd32-ef7a2e779b05-168516041509fb5a80-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Proyecto_nuevo_2.png",
-            "title": "Entradas protegidas",
+            "image": "shopify:\/\/shop_images\/Captura_de_pantalla_2023-05-26_a_la_s_21.00.42.png",
+            "title": "",
             "text": "",
             "link_label": "",
             "link": ""
           }
         },
-        "template--16824071520476__a66cb840-94d8-446d-a5ef-e451efe3cddc-1685150708b5945de5-1": {
+        "template--16824071520476__c570d919-4de5-490c-bd32-ef7a2e779b05-168516041509fb5a80-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Proyecto_nuevo_4.png",
-            "title": "Diferentes estados donde hemos enviado",
+            "image": "shopify:\/\/shop_images\/Captura_de_pantalla_2023-05-26_a_la_s_21.00.57.png",
+            "title": "",
             "text": "",
             "link_label": "",
             "link": ""
           }
         },
-        "template--16824071520476__a66cb840-94d8-446d-a5ef-e451efe3cddc-1685150708b5945de5-2": {
+        "template--16824071520476__c570d919-4de5-490c-bd32-ef7a2e779b05-168516041509fb5a80-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Proyecto_nuevo_8.png",
-            "title": "Premios nacionales en innovación",
+            "image": "shopify:\/\/shop_images\/Captura_de_pantalla_2023-05-26_a_la_s_21.01.04.png",
+            "title": "",
             "text": "",
             "link_label": "",
             "link": ""
@@ -103,19 +103,19 @@
         }
       },
       "block_order": [
-        "template--16824071520476__a66cb840-94d8-446d-a5ef-e451efe3cddc-1685150708b5945de5-0",
-        "template--16824071520476__a66cb840-94d8-446d-a5ef-e451efe3cddc-1685150708b5945de5-1",
-        "template--16824071520476__a66cb840-94d8-446d-a5ef-e451efe3cddc-1685150708b5945de5-2"
+        "template--16824071520476__c570d919-4de5-490c-bd32-ef7a2e779b05-168516041509fb5a80-0",
+        "template--16824071520476__c570d919-4de5-490c-bd32-ef7a2e779b05-168516041509fb5a80-1",
+        "template--16824071520476__c570d919-4de5-490c-bd32-ef7a2e779b05-168516041509fb5a80-2"
       ],
       "settings": {
         "title": "",
         "heading_size": "h1",
         "image_width": "full",
         "enable_custom_image_width": false,
-        "image_width_custom": 100,
+        "image_width_custom": 80,
         "image_ratio": "adapt",
         "columns_desktop": 3,
-        "column_alignment": "center",
+        "column_alignment": "left",
         "show_steps": false,
         "background_style": "primary",
         "button_label": "",
@@ -123,8 +123,8 @@
         "color_scheme": "background-2",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "16551872299b5550ca": {
@@ -159,7 +159,7 @@
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "mobile_content_alignment": "center",
-        "padding_top": 80,
+        "padding_top": 40,
         "padding_bottom": 80,
         "classes": "has-vivido-inundacion"
       }
@@ -710,7 +710,7 @@
   },
   "order": [
     "1655186926c306d030",
-    "a66cb840-94d8-446d-a5ef-e451efe3cddc",
+    "c570d919-4de5-490c-bd32-ef7a2e779b05",
     "16551872299b5550ca",
     "6df8b523-1e6c-4da2-b89e-ee21166e1658",
     "3e9a5e97-2ecc-4480-b513-d3ab08f02d68",
