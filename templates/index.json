@@ -532,6 +532,65 @@
       "settings": {
       }
     },
+    "29f194d5-6ed2-4acb-98c4-60599001f49c": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16824071520476__29f194d5-6ed2-4acb-98c4-60599001f49c-1685150708b5945de5-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/entrega_1.png",
+            "title": "Envíos Gratis",
+            "text": "<p>Recibe tu producto sin costo en pedidos mayores a $499<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16824071520476__29f194d5-6ed2-4acb-98c4-60599001f49c-1685150708b5945de5-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/garantia_2.png",
+            "title": "Garantía de funcionamiento",
+            "text": "<p>Todos nuestros están grantizados <\/p><p>por 4 años<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16824071520476__29f194d5-6ed2-4acb-98c4-60599001f49c-1685150708b5945de5-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tarjeta-de-credito.png",
+            "title": "Compra Segura",
+            "text": "<p>Protegemos tus datos personales en todo momento<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16824071520476__29f194d5-6ed2-4acb-98c4-60599001f49c-1685150708b5945de5-0",
+        "template--16824071520476__29f194d5-6ed2-4acb-98c4-60599001f49c-1685150708b5945de5-1",
+        "template--16824071520476__29f194d5-6ed2-4acb-98c4-60599001f49c-1685150708b5945de5-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "enable_custom_image_width": true,
+        "image_width_custom": 50,
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "show_steps": false,
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "accent-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
     "165543631478c9c8e0": {
       "type": "donations",
       "disabled": true,
@@ -588,34 +647,6 @@
         "padding_top": 68,
         "padding_bottom": 68
       }
-    },
-    "0a8d3ac7-cbf0-4705-b9cf-1f0962d68f71": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured collection",
-        "heading_size": "h1",
-        "heading_color": "#003667",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -631,9 +662,9 @@
     "c76da3e3-0258-4b06-aef1-98a0f531a530",
     "1681668402596a5f60",
     "165558713225a8d0b6",
+    "29f194d5-6ed2-4acb-98c4-60599001f49c",
     "165543631478c9c8e0",
     "bcd8b3a8-6688-4adb-8816-864f4b6f0a4c",
-    "1655510331beb5ab3e",
-    "0a8d3ac7-cbf0-4705-b9cf-1f0962d68f71"
+    "1655510331beb5ab3e"
   ]
 }
