@@ -25,6 +25,13 @@
             "text_style": "body"
           }
         },
+        "09721142-1dde-4157-8ba2-0cbd63d82916": {
+          "type": "text",
+          "settings": {
+            "text": "Devolución gratis",
+            "text_style": "body"
+          }
+        },
         "b6f65430-cae8-4367-af46-669c7e73d8ff": {
           "type": "shopify:\/\/apps\/aplazo-banner\/blocks\/product-banner\/baf789e0-a296-4b10-bc87-11417720714b",
           "settings": {
@@ -65,6 +72,7 @@
         "7ce99c0a-da5f-4d50-8956-fec260c32935",
         "price",
         "a835acf8-678f-49cc-8ac1-eee5aa06cd80",
+        "09721142-1dde-4157-8ba2-0cbd63d82916",
         "b6f65430-cae8-4367-af46-669c7e73d8ff",
         "description",
         "variant_picker",
@@ -74,6 +82,7 @@
       ],
       "settings": {
         "enable_sticky_info": true,
+        "best_seller": false,
         "gallery_layout": "thumbnail_slider",
         "media_size": "small",
         "mobile_thumbnails": "show",
