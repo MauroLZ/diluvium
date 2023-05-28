@@ -12,12 +12,12 @@
     #price-template-{{ section.id }} {
       margin-bottom: 0;
     }
-    
+
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
     }
-    
+
      #logo-image {
        width: 90px!important;
      }
@@ -55,6 +55,7 @@
             {{ "accessibility.skip_to_product_info" | t }}
           </a>
           <ul id="Slider-Gallery-{{ section.id }}" class="product__media-list contains-media grid grid--peek list-unstyled slider slider--mobile" role="list">
+            <span class="best-seller-badge">MÁS VENDIDO</span>
             {%- liquid
               assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src'
               assign media_count = product.media.size
@@ -1052,6 +1053,12 @@
       "id": "enable_sticky_info",
       "default": true,
       "label": "t:sections.main-product.settings.enable_sticky_info.label"
+    },
+    {
+      "type": "checkbox",
+      "label": "Best Seller",
+      "id": "best_seller",
+      "default": false
     },
     {
       "type": "header",
