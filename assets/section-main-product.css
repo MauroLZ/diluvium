@@ -299,6 +299,7 @@ fieldset.product-form__input .form__label {
 }
 .product__text {
   margin-top: 0;
+  color: #42AA42;
 }
 .product__info-container>div  {
   margin-top: 0;
