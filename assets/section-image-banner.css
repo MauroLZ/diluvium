@@ -475,6 +475,16 @@
   .homepage-banner .banner__heading {
     font-size: 3rem;
   }
+
+  .banner__box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .banner__buttons {
+    margin-right: 30px;
+  }
   
 }
 
