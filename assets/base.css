@@ -1017,6 +1017,13 @@ summary::-webkit-details-marker {
   z-index: 2; /* Ensure the badge appears above the image */
 }
 
+@media screen and (max-width: 749px) {
+  .best-seller-badge {
+    top: 15px;
+    left: 55px;
+  }
+}
+
 /* component-grid */
 .grid {
   display: flex;
