@@ -5,6 +5,12 @@
   text-decoration: none;
 }
 
+@media screen and (max-width: 749px) {
+  .product-grid li:nth-child(3){
+    display: none;
+  }
+}
+
 .card {
   text-align: var(--card-text-alignment);
   text-decoration: none;
