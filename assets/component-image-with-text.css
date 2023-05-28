@@ -388,9 +388,10 @@
     padding-bottom: 26px!important;
   }
 
-  .porque-comprar .image-with-text__media-item  {
+  /* Commented so the image doesn't hide when on mobile resolution */
+/*  .porque-comprar .image-with-text__media-item  {
     display: none;
-  }
+  }*/
   .image-with-text__icon {
       display: flex;
       flex-direction: column;

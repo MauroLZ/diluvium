@@ -1009,9 +1009,9 @@ summary::-webkit-details-marker {
   position: absolute;
   top: 10px; /* Adjust the top position as needed */
   left: 35px; /* Adjust the right position as needed */
-  background-color: #C75E23;
+  background-color: #EF7E45;
   color: white;
-  padding: 5px;
+  padding: 0 6px;
   border-radius: 5px;
   font-size: 12px; /* Adjust the font size as needed */
   z-index: 2; /* Ensure the badge appears above the image */
