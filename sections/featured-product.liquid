@@ -107,6 +107,10 @@
                 {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
               </div>
               </div>
+              <div class="featured-view-btn">
+                       {% unless show_quick_add %}<div class="card-product__view-btn-container"><a class="button card-product__view-btn" href="{{ product.url }}">Ver producto</a></div>{% endunless %}
+              </div>
+
 {% comment %}              {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
                 <div class="product__tax caption rte">
                   {%- if shop.taxes_included -%}
@@ -345,10 +349,10 @@
               {%- endif -%}
             {%- endcase -%}
           {%- endfor -%}
-        <a{% if product == blank %} role="link" aria-disabled="true"{% else %} href="{{ product.url }}"{% endif %} class="link product__view-details animate-arrow">
+{% comment %}        <a{% if product == blank %} role="link" aria-disabled="true"{% else %} href="{{ product.url }}"{% endif %} class="link product__view-details animate-arrow">
           {{ 'products.product.view_full_details' | t }}
           {% render 'icon-arrow' %}
-        </a>
+        </a>{% endcomment %}
         </div>
       </div>
     </div>
