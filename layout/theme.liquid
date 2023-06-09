@@ -217,7 +217,7 @@
       document.documentElement.classList.add('shopify-design-mode');
     }
     </script>
-  
+
 	{{ shop.metafields.loox["global_html_head"] }}
    <script async defer src="https://tools.luckyorange.com/core/lo.js?site-id=95cb6a63"></script>
 {% capture boostersnippet %}{% include "booster-apps-common" %}{% endcapture %}{% unless boostersnippet contains "Liquid error" %}{{ boostersnippet }}{% endunless %}
@@ -278,9 +278,9 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
     <script src="{{ 'slick.min.js' | asset_url }}"></script>
-  
+
 	{{ shop.metafields.loox["global_html_body"] }}
 <script src="{{ 'seedgrow-whatsapp-init.js' | asset_url }}" defer="defer"></script><script src="{{ 'seedgrow-whatsapp-lib.js' | asset_url }}" defer="defer"></script>{% if content_for_header contains 'session-recording-now.herokuapp.com' %}{% render 'screen-recording-now' %}{% endif %}
-	{% include 'gsc-script' %} 
+	{% include 'gsc-script' %}
 </body>
 </html>

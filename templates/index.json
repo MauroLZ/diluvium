@@ -199,8 +199,7 @@
         },
         "template--16824071520476__3e9a5e97-2ecc-4480-b513-d3ab08f02d68-16851410328cd444e7-3": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "template--16824071520476__3e9a5e97-2ecc-4480-b513-d3ab08f02d68-16851410328cd444e7-6": {
           "type": "buy_buttons",
@@ -410,9 +409,7 @@
     "56c39255-f588-4791-bb36-d7d5c9f7cb7d": {
       "type": "testimonials",
       "disabled": true,
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "title": "Algunos clientes satisfechos"
       }
@@ -588,8 +585,7 @@
         "d9e43fe0-eedf-4d2f-a228-f5549f08eb4f",
         "0fa02d53-8ba8-4768-8c66-8410fe9bd2c7"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "29f194d5-6ed2-4acb-98c4-60599001f49c": {
       "type": "multicolumn",
@@ -653,8 +649,7 @@
     "165543631478c9c8e0": {
       "type": "donations",
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     },
     "bcd8b3a8-6688-4adb-8816-864f4b6f0a4c": {
       "type": "newsletter",
@@ -675,8 +670,7 @@
         },
         "template--16139322786012__bcd8b3a8-6688-4adb-8816-864f4b6f0a4c-166554521459ff9de8-2": {
           "type": "email_form",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
