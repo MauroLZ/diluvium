@@ -355,6 +355,12 @@
   height: 4rem;
 }
 
+.featured-price .price {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 2.5rem;
+}
+
 .price--on-sale .price-item--sale,
 .price__regular .price-item--regular {
   font-weight: bold;
@@ -371,6 +377,15 @@
   .featured-collection .card-wrapper {
     padding: 1rem;
   }
+
+  .featured-price .price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    font-size: 2rem;
+  }
+
 }
 
 @media screen and (max-width: 749px) {

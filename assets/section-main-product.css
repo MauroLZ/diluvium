@@ -327,7 +327,6 @@ a.product__text {
 }
 
 .product__title {
-  word-break: break-word;
   margin-bottom: 1.5rem;
 }
 
@@ -488,6 +487,10 @@ a.product__text {
   border-radius: calc(var(--media-radius) - var(--media-border-width));
 }
 
+.loox-container {
+  font-size: 2rem;
+}
+
 @media screen and (max-width: 749px) {
   .product__media-list {
     margin-left: -2.5rem;
@@ -515,6 +518,21 @@ a.product__text {
 
   .product__media-list .product__media-item {
     width: calc(100% - 3rem - var(--grid-mobile-horizontal-spacing));
+  }
+
+  .product__title {
+    word-break: break-word;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .loox-container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.5rem;
   }
 }
 
