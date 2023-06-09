@@ -327,7 +327,6 @@
 @media screen and (max-width: 749px) {
   .featured-collection .card__heading {
     font-size: 1.6rem;
-    height: 6.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
