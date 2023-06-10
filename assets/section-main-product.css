@@ -647,6 +647,10 @@ a.product__text {
   border: 0.1rem solid rgba(var(--color-foreground), 0.1);
 }
 
+.product__modal-opener .global-media-settings {
+  border: none;
+}
+
 @media screen and (min-width: 750px) {
   .grid__item.product__media-item--full {
     width: 100%;
