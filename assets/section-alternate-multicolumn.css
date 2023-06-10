@@ -109,6 +109,11 @@
     }
 }
 
+@media screen and (max-width: 950px) {
+    .multicolumn-list {
+        display: none;
+    }
+}
 
 @media screen and (min-width: 750px) {
     .multicolumn-list.slider,

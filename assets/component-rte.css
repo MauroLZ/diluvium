@@ -32,6 +32,16 @@
   margin-bottom: var(--media-shadow-vertical-offset);
 }
 
+.product__description div img {
+  border: none !important;
+}
+
+@media screen and (max-width: 749px) {
+  .product__description div img {
+    margin-left: 0 !important;
+  }
+}
+
 .rte ul {
   padding-left: 2rem;
 }
