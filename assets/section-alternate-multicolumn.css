@@ -10,7 +10,7 @@
     margin-top: 0;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 950px) {
     .alternate-multicolumn {
         display: none;
     }
@@ -106,12 +106,6 @@
     .multicolumn-list:not(.slider) {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 950px) {
-    .multicolumn-list {
-        display: none;
     }
 }
 
