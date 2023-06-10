@@ -194,6 +194,7 @@
     --color-foreground: 255, 255, 255;
     --color-button: 255, 255, 255;
     --color-button-text: 0, 0, 0;
+    transform: translateY(-85px);
   }
 
   .banner:not(.banner--mobile-bottom) .banner__box {
