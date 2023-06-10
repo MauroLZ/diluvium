@@ -199,19 +199,29 @@
         },
         "template--16824071520476__3e9a5e97-2ecc-4480-b513-d3ab08f02d68-16851410328cd444e7-3": {
           "type": "price",
-          "settings": {}
-        },
-        "template--16824071520476__3e9a5e97-2ecc-4480-b513-d3ab08f02d68-16851410328cd444e7-6": {
-          "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true
+          }
+        },
+        "eddd08da-e448-4f05-af1d-608c3e996c6a": {
+          "type": "text",
+          "settings": {
+            "text": "Envío gratis de 3-5 días",
+            "text_style": "body"
+          }
+        },
+        "2eb57bd1-7a91-4a84-8bc6-f2c3b9d159bb": {
+          "type": "text",
+          "settings": {
+            "text": "Devolución gratis",
+            "text_style": "body"
           }
         }
       },
       "block_order": [
         "template--16824071520476__3e9a5e97-2ecc-4480-b513-d3ab08f02d68-16851410328cd444e7-1",
         "template--16824071520476__3e9a5e97-2ecc-4480-b513-d3ab08f02d68-16851410328cd444e7-3",
-        "template--16824071520476__3e9a5e97-2ecc-4480-b513-d3ab08f02d68-16851410328cd444e7-6"
+        "eddd08da-e448-4f05-af1d-608c3e996c6a",
+        "2eb57bd1-7a91-4a84-8bc6-f2c3b9d159bb"
       ],
       "settings": {
         "product": "compuerta-anti-inundaciones",
@@ -221,7 +231,7 @@
         "hide_variants": false,
         "enable_video_looping": false,
         "padding_top": 36,
-        "padding_bottom": 0
+        "padding_bottom": 52
       }
     },
     "featured_collection": {
@@ -233,7 +243,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "los-mas-vendidos",
+        "collection": "coleccion-para-escritorio",
         "products_to_show": 3,
         "columns_desktop": 3,
         "full_width": false,
@@ -409,7 +419,9 @@
     "56c39255-f588-4791-bb36-d7d5c9f7cb7d": {
       "type": "testimonials",
       "disabled": true,
-      "custom_css": [],
+      "custom_css": [
+
+      ],
       "settings": {
         "title": "Algunos clientes satisfechos"
       }
@@ -585,7 +597,8 @@
         "d9e43fe0-eedf-4d2f-a228-f5549f08eb4f",
         "0fa02d53-8ba8-4768-8c66-8410fe9bd2c7"
       ],
-      "settings": {}
+      "settings": {
+      }
     },
     "29f194d5-6ed2-4acb-98c4-60599001f49c": {
       "type": "multicolumn",
@@ -649,7 +662,8 @@
     "165543631478c9c8e0": {
       "type": "donations",
       "disabled": true,
-      "settings": {}
+      "settings": {
+      }
     },
     "bcd8b3a8-6688-4adb-8816-864f4b6f0a4c": {
       "type": "newsletter",
@@ -670,7 +684,8 @@
         },
         "template--16139322786012__bcd8b3a8-6688-4adb-8816-864f4b6f0a4c-166554521459ff9de8-2": {
           "type": "email_form",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
