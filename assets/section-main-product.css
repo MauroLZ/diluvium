@@ -342,7 +342,7 @@ a.product__text {
 }
 
 /* Styles for desktop */
-@media screen and (min-width: 951px) {
+@media screen and (min-width: 1300px) {
   .product__title {
     white-space: nowrap;
   }
