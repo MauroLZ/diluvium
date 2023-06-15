@@ -500,12 +500,6 @@
             "image": "shopify:\/\/shop_images\/Logo_12.png"
           }
         },
-        "45318799-3c80-4d04-a28d-a981772b1245": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Logo_16.png"
-          }
-        },
         "da544e28-4bc6-4fe0-b465-af4d40116a5d": {
           "type": "logo",
           "settings": {
@@ -583,7 +577,6 @@
         "09620e80-39d0-45be-a900-795423d99def",
         "4406f7dd-b437-4805-846c-e7cd01ca5ded",
         "c7160f2d-c371-4bb4-b693-ff20a1547a76",
-        "45318799-3c80-4d04-a28d-a981772b1245",
         "da544e28-4bc6-4fe0-b465-af4d40116a5d",
         "b546a04a-87ca-4a40-bcf7-11dce226c3ea",
         "7605af42-3546-4a90-b279-40815324c799",
