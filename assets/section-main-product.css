@@ -341,6 +341,12 @@ a.product__text {
   margin-bottom: 1.5rem;
 }
 
+.product-page-title {
+  white-space: normal; /* Allow line breaks */
+  word-break: break-word; /* Break words at any character */
+  width: 100%; /* Adjust the width as needed */
+}
+
 /* Styles for desktop */
 @media screen and (min-width: 1300px) {
   .product__title {

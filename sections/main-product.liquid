@@ -228,7 +228,7 @@
             </p>
           {%- when 'title' -%}
             <div class="product__title" {{ block.shopify_attributes }}>
-              <h1 class="h2">{{ product.title | escape }}</h1>
+              <h1 class="h2 product-page-title">{{ product.title | escape }}</h1>
               <a href="{{ product.url }}" class="product__title">
                 <h2 class="h2">
                   {{ product.title | escape }}
