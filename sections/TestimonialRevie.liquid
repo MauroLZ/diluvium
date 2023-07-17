@@ -1,0 +1,561 @@
+{% if shop.metafields.revie.reviewShopProductList %}
+
+<div class="section-{{ section.id }}-padding" id="revieListTestimoniales-content">
+  <div class="gallryRevie">
+	<div id='revieList' style="height: 0px;padding: 0px;"></div>
+    <section class="sectionRevie">
+      <h2 class="titleTestimonials">{{ section.settings.title }}</h2>
+      <div id="titleTestimonials"><div class="titleRevie"></div></div>
+      <div class="gridTestimoniales" id="revieListTestimoniales">
+        {% if request.design_mode %}
+          <div class="testimoniales-item testimoniales-item-1" >
+              <div class="tm-revie-flex tm-revie-review">
+            	<div>
+            		<div class="tm-revie-customer">John Doe <div class="testimoniales-check">✔</div></div>
+            		<div class="titleRevie"><div id="revieStar"><i data-star="5"></i></div></div>
+            		<div class="tm-revie-comment">This is a sample review</div>
+            	</div>
+            	<div class="tm-revie-image"><img src="https://revie.triciclogo.com/images/shopify-noimage1.png" width="100" height="100" alt="image" srcset=""/></div>
+              </div>
+              <hr class="tm-revie-hr">
+              <div class="tm-revie-flex tm-revie-product">
+            	<div class="tm-revie-image-prod"><img src="https://revie.triciclogo.com/images/shopify-noimage2.png" width="100" height="100" alt="image" srcset=""/></div>
+            	<div class="tm-revie-prod">Test product</div>
+              </div>
+          </div>
+          <div class="testimoniales-item testimoniales-item-1" >
+              <div class="tm-revie-flex tm-revie-review">
+            	<div>
+            		<div class="tm-revie-customer">John Doe <div class="testimoniales-check">✔</div></div>
+            		<div class="titleRevie"><div id="revieStar"><i data-star="5"></i></div></div>
+            		<div class="tm-revie-comment">This is a sample review</div>
+            	</div>
+            	<div class="tm-revie-image"><img src="https://revie.triciclogo.com/images/shopify-noimage2.png" width="100" height="100" alt="image" srcset="" loading="lazy"/></div>
+              </div>
+              <hr class="tm-revie-hr">
+              <div class="tm-revie-flex tm-revie-product">
+            	<div class="tm-revie-image-prod"><img src="https://revie.triciclogo.com/images/shopify-noimage3.png" width="100" height="100" alt="image" srcset="" loading="lazy"/></div>
+            	<div class="tm-revie-prod">Test product</div>
+              </div>
+          </div>
+          <div class="testimoniales-item testimoniales-item-1" >
+              <div class="tm-revie-flex tm-revie-review">
+            	<div>
+            		<div class="tm-revie-customer">John Doe <div class="testimoniales-check">✔</div></div>
+            		<div class="titleRevie"><div id="revieStar"><i data-star="5"></i></div></div>
+            		<div class="tm-revie-comment">This is a sample review</div>
+            	</div>
+            	<div class="tm-revie-image"><img src="https://revie.triciclogo.com/images/shopify-noimage3.png" width="100" height="100" alt="image" srcset="" loading="lazy"/></div>
+              </div>
+              <hr class="tm-revie-hr">
+              <div class="tm-revie-flex tm-revie-product">
+            	<div class="tm-revie-image-prod"><img src="https://revie.triciclogo.com/images/shopify-noimage1.png" width="100" height="100" alt="image" srcset="" loading="lazy"/></div>
+            	<div class="tm-revie-prod">Test product</div>
+              </div>
+          </div>
+      {% endif %}
+	</div>
+  <div class="centerTM" id="moreTestimoniales">
+    <div onclick="ShowMoreTestimoniales()"  title="Mostrar más reseñas" rel="nofollow noopener noreferrer" class="icon-Testimoniales">
+        <span class="button-text">Mostrar más reseñas</span>
+    </div>
+  </div>
+  </section>
+  </div>
+</div> 
+<script>
+  {% if shop.metafields.revie.reviewShopData %}
+	  {% if section.settings.showGeneralData == "1" %}
+		let contentRevieTestimonialesGeneral = '{{ shop.metafields.revie.reviewShopData | json | remove: "'" | remove: '\"' }}'.replace(/\n/g,' ').replace(/\r/g,' ').replace(/\t/g,' ');
+		contentRevieTestimonialesGeneral = JSON.parse(contentRevieTestimonialesGeneral);
+	   
+		let titleTestimonialesElement = document.getElementById("titleTestimonials");
+		titleTestimonialesElement.innerHTML = `<div class="titleRevie"><div id="revieStar" title="${contentRevieTestimonialesGeneral.reviewAverageValue.toFixed(2)} Stars"><i data-star="${contentRevieTestimonialesGeneral.reviewAverageValue}"></i></div></div><div class="textTestimonial">${contentRevieTestimonialesGeneral.reviewCount} {{ section.settings.title_stars }}</div>`
+	  {% endif %}
+  {% endif %}
+  let firshTestimonialModoDesign=true;
+  let contentRevieTestimoniales = '{{ shop.metafields.revie.reviewShopProductList | json | remove: "'" | remove: '\"' }}'.replace(/\n/g,' ').replace(/\r/g,' ').replace(/\t/g,' ');
+  contentRevieTestimoniales = JSON.parse(contentRevieTestimoniales);
+  if (Shopify.designMode){
+    console.log("Modo Design");
+  }else{
+    document.getElementById("revieListTestimoniales").innerHTML ="";
+  }
+  let testimonialsCheck=`<div class='testimonials-check'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#12D385" fill-rule="evenodd" d="M15.554 6.303l-.338-.23a1.037 1.037 0 0 1-.408-1.148l.106-.389c.178-.6-.23-1.22-.853-1.325l-.409-.071c-.444-.07-.8-.406-.87-.848l-.071-.407a1.052 1.052 0 0 0-1.333-.83l-.391.123c-.427.124-.907-.035-1.156-.388L9.583.436A1.052 1.052 0 0 0 8.019.277L7.717.56A1.05 1.05 0 0 1 6.49.7L6.135.507a1.071 1.071 0 0 0-1.493.53l-.16.389a1.02 1.02 0 0 1-1.03.654l-.41-.018a1.037 1.037 0 0 0-1.101 1.113l.035.407c.036.442-.23.866-.64 1.042l-.373.16a1.053 1.053 0 0 0-.515 1.484l.213.354c.231.388.178.883-.124 1.219l-.267.3a1.028 1.028 0 0 0 .196 1.556l.337.23c.373.247.533.724.409 1.148l-.16.407c-.178.6.231 1.219.853 1.325l.409.07c.444.071.8.407.87.849l.072.406a1.052 1.052 0 0 0 1.333.831l.39-.124c.427-.123.907.036 1.156.39l.249.335a1.052 1.052 0 0 0 1.564.159l.302-.283a1.05 1.05 0 0 1 1.226-.141l.355.194c.551.3 1.245.053 1.493-.53l.16-.389a1.02 1.02 0 0 1 1.031-.654l.409.018a1.037 1.037 0 0 0 1.102-1.113l-.018-.407a1.061 1.061 0 0 1 .64-1.042l.373-.16c.586-.247.817-.936.515-1.484l-.213-.354a1.035 1.035 0 0 1 .124-1.219l.267-.3a1.025 1.025 0 0 0-.16-1.556zm-7.091 3.34l-1.457 1.432-1.44-1.45L4.18 8.23l1.457-1.432 1.386 1.396 3.324-3.287 1.44 1.45-3.324 3.287z"/></svg></div>`;
+  let contentRevieListDivTestimoniales="";
+  let countTestimoniales =0;
+  let revieElementPageTestimoniales = {{ section.settings.max_reviews }};
+  let inicTestimolniales = 0;
+  let page = 1;
+
+  let moreTestimonialesElement = document.getElementById("revieListTestimoniales");
+  moreTestimonialesElement.style.display = "none";
+
+  function ShowMoreTestimoniales(){
+    contentRevieListDivTestimoniales="";
+    page++;
+    countTestimoniales =0;
+    showTestimoniales();
+    return false;
+  }
+  function showTestimoniales(){
+    
+    for (let i=inicTestimolniales; i < contentRevieTestimoniales.length && countTestimoniales<revieElementPageTestimoniales; i++){
+		let element = contentRevieTestimoniales[i];
+		let image = '';
+		{% if section.settings.image == "1" %}
+		if (element.product.images && element.product.images.length > 0){
+			image = element.product.images[0].src;
+		}
+		{% endif %}
+		{% if section.settings.image == "2" %}
+		if (element.images && element.images.length > 0 && element.images[0].active){
+		  image = element.images[0].src;
+		}
+		{% endif %}
+        {% if section.settings.image == "3" %}
+          if (element.images && element.images.length > 0 && element.images[0].active){
+            image = element.images[0].src;
+          }else if (element.product.images && element.product.images.length > 0){
+            image = element.product.images[0].src;
+          }
+        {% endif %}
+		inicTestimolniales++;
+		if (element["comment"] != null && element["comment"] != "" && image != ''){
+          countTestimoniales++;
+          let name = `${element.customer.firstName}`;
+  
+          let divItem=`<div class="testimoniales-item testimoniales-item-${countTestimoniales % 2}" onclick="openModalRevieTestimoniales('${image}', '${element["comment"]}', '${name}', '${element.stars}', '${element.product.images[0].src}', '${element.product.name}', '${element.product.handle}')">
+            <div class="tm-revie-flex tm-revie-review">
+              <div>
+                  <div class="tm-revie-customer">${name} ${testimonialsCheck}</div>
+                  <div class="titleRevie" title="${element.stars} Stars"><div id="revieStar"><i data-star="${element.stars}"></i></div></div>
+                  <div class="tm-revie-comment">${element.comment}</div>
+              </div>
+              <div class="tm-revie-image"><img onError="this.onerror=null;this.src='https://revie.triciclogo.com/images/sin-fotos.png';" src="${image}" alt="image" srcset=""></div>
+            </div>
+            <hr class="tm-revie-hr" />
+            <div class="tm-revie-flex tm-revie-product">
+              <div class="tm-revie-image-prod"><img onError="this.onerror=null;this.src='https://revie.triciclogo.com/images/sin-fotos.png';" src="${element.product.images[0].src}" alt="image" srcset=""></div>
+              <div class="tm-revie-prod">${element.product.name}</div>
+            </div>
+          </div>`;
+  		contentRevieListDivTestimoniales+=divItem;
+  	}
+    }
+    if (contentRevieListDivTestimoniales != ""){
+		if(firshTestimonialModoDesign){
+			moreTestimonialesElement.innerHTML = "";
+			firshTestimonialModoDesign = false;
+		}
+      moreTestimonialesElement.innerHTML = moreTestimonialesElement.innerHTML + contentRevieListDivTestimoniales;
+      moreTestimonialesElement.style.display = "block";
+    }else{
+      var moreTestimoniales = document.getElementById("moreTestimoniales");
+      moreTestimoniales.style.display = "none";
+    }
+	setTimeout(() => {loadReviewTestimoniales();}, "200");
+	setTimeout(() => {loadReviewTestimoniales();}, "700");
+	setTimeout(() => {loadReviewTestimoniales();}, "1200");
+	setTimeout(() => {loadReviewTestimoniales();}, "2000");
+	setTimeout(() => {loadReviewTestimoniales();}, "4000");
+  }
+  
+
+  
+  let maxWidthTestimoniales = 0;
+  let maxWidthTestimonialesDiv = document.getElementById('revieListTestimoniales');
+  let isTwocolumnTestimoniales = false;
+  function resizeGridItemInicTestimoniales(item, posTestimoniales, leftPos) {
+    item.style.position= 'absolute';
+    item.style.width= '50%';
+    item.style.left= leftPos+"px";
+    item.style.top= posTestimoniales+"px";
+    posTestimoniales = posTestimoniales + item.offsetHeight+16;
+    return posTestimoniales;
+  }
+
+  function resizeGridItemInicTestimonialesClean(item) {
+    item.style.position= 'initial';
+    item.style.width= '100%';
+  }
+
+  function loadReviewTestimoniales(){
+    isTwocolumnTestimoniales = false;
+    if(maxWidthTestimonialesDiv.offsetWidth > 650){
+      maxWidthTestimoniales = maxWidthTestimonialesDiv.offsetWidth / 2;
+      let posTestimoniales = 0;
+      let maxPosTestimoniales = 0;
+      let gridItems = document.querySelectorAll('.testimoniales-item-1');
+      gridItems.forEach(item => posTestimoniales=resizeGridItemInicTestimoniales(item, posTestimoniales, 0));
+      maxPosTestimoniales = posTestimoniales;
+      posTestimoniales = 0;
+      gridItems = document.querySelectorAll('.testimoniales-item-0');
+      gridItems.forEach(item => posTestimoniales=resizeGridItemInicTestimoniales(item, posTestimoniales, (maxWidthTestimoniales + 16)));
+
+      if(maxPosTestimoniales < posTestimoniales){
+        maxPosTestimoniales = posTestimoniales;
+      }
+      maxWidthTestimonialesDiv.style.height= maxPosTestimoniales+'px';
+    }else{
+      let gridItems = document.querySelectorAll('.testimoniales-item');
+      gridItems.forEach(item => resizeGridItemInicTestimonialesClean(item));
+
+      maxWidthTestimonialesDiv.style.height= 'auto';
+    }
+    
+  }
+  
+  let isInstallOpenModal = true;
+
+  function openModalRevieTestimoniales(image, text, name, star, productImage, productName, handle){
+	if(isInstallOpenModal){
+		isInstallOpenModal=false;
+		document.body.insertAdjacentHTML('beforeend', "<div id='modalRevieTestimoniales' class='modalRevieTestimoniales'><span class='closeModalTestimoniales'>&times;</span><div class='modalTcontent'><div class='div-modal-content-TM' id='modalRevieIMGTestimoniales'></div><div id='captionRevieTestimoniales'><div><div class='tm-revie-customer'><span id='testimonialesname'></span>"+testimonialsCheck+"</div><div class='titleRevie'><div id='revieStar'><i data-star='5' id='testimonialesstar'></i></div></div><div class='tm-revie-comment' id='testimonialescomment'></div></div><div><hr class='tm-revie-hr' /><div class='cont-tm-product'><div class='tm-revie-flex tm-revie-product'><div class='tm-revie-image-prod'><img id='testimonialesprductImage' alt='image' srcset='' loading='lazy' /></div><div class='tm-revie-prod' id='testimonialesprductName'></div></div><a href='#' id='testimonialesprductLink' title='View product at store' target='_blank' rel='nofollow noopener noreferrer' class='icon-Testimoniales'><div class='button-icon'><svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M4.66667 5.33335V4.00002C4.66667 3.11597 5.01786 2.26812 5.64298 1.643C6.2681 1.01788 7.11595 0.666687 8 0.666687C8.88406 0.666687 9.7319 1.01788 10.357 1.643C10.9821 2.26812 11.3333 3.11597 11.3333 4.00002V5.33335H13.3333C13.5101 5.33335 13.6797 5.40359 13.8047 5.52862C13.9298 5.65364 14 5.82321 14 6.00002V14C14 14.1768 13.9298 14.3464 13.8047 14.4714C13.6797 14.5964 13.5101 14.6667 13.3333 14.6667H2.66667C2.48986 14.6667 2.32029 14.5964 2.19526 14.4714C2.07024 14.3464 2 14.1768 2 14V6.00002C2 5.82321 2.07024 5.65364 2.19526 5.52862C2.32029 5.40359 2.48986 5.33335 2.66667 5.33335H4.66667ZM4.66667 6.66669H3.33333V13.3334H12.6667V6.66669H11.3333V8.00002H10V6.66669H6V8.00002H4.66667V6.66669ZM6 5.33335H10V4.00002C10 3.46959 9.78929 2.96088 9.41421 2.58581C9.03914 2.21073 8.53043 2.00002 8 2.00002C7.46957 2.00002 6.96086 2.21073 6.58579 2.58581C6.21071 2.96088 6 3.46959 6 4.00002V5.33335Z' fill='black'></path></svg></div><span class='button-text'>Ver producto</span></a></div></div></div></div>");
+	}
+      
+      var modal = document.getElementById("modalRevieTestimoniales");
+
+      var modalImg = document.getElementById("modalRevieIMGTestimoniales");
+      var nameElem = document.getElementById("testimonialesname");
+      var starElem = document.getElementById("testimonialesstar");
+      var commentElem = document.getElementById("testimonialescomment");
+      var tProductImage = document.getElementById("testimonialesprductImage");
+      var tProductName = document.getElementById("testimonialesprductName");
+      var tProductLink = document.getElementById("testimonialesprductLink");
+        
+      
+      modal.style.display = "block";
+      modalImg.style.backgroundImage = "url('"+image+"')";
+      nameElem.innerHTML = name;
+      commentElem.innerHTML = text;
+      starElem.dataset.star= star;
+      tProductImage.src = productImage;
+      tProductName.innerHTML = productName;
+      tProductLink.href = '/products/'+handle+'/?utm_source=revie&utm_medium=revie_testimonial&utm_campaign=revie';
+      
+      var span = document.getElementsByClassName("closeModalTestimoniales")[0];
+
+      span.onclick = function() { 
+          modal.style.display = "none";
+      }
+  }
+showTestimoniales();
+window.addEventListener('resize', loadReviewTestimoniales);
+setTimeout(() => {
+  loadReviewTestimoniales();
+}, "2000");
+setTimeout(() => {
+  loadReviewTestimoniales();
+}, "4000");
+
+</script>
+
+<style>
+	.testimonials-check svg{width: 16px;height: 16px;stroke: transparent;fill: transparent;margin-left: 1rem;}
+  .sectionRevie{max-width: {{ section.settings.max_width }}px;padding: {{ section.settings.content_padding }}px;margin: 0 auto;}
+  .centerTM{text-align: center;}
+  .centerTM > div{cursor: pointer;}
+  .icon-Testimoniales{align-self:flex-start;display:inline-flex;align-items:center;padding:6px 11px;background-color:rgba(0,0,0,0.05);-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;-webkit-transition:background-color .1s ease-in;-moz-transition:background-color .1s ease-in;-o-transition:background-color .1s ease-in;transition:background-color .1s ease-in;text-decoration:none}
+  .icon-Testimoniales .button-icon{margin-right:10px;height:16px;font-size:12px}
+  .icon-Testimoniales .button-text{font-weight:400;font-size:14px;line-height:24px;color:#000;white-space:nowrap}
+  .cont-tm-product{display:flex;flex-direction:column;align-items:flex-start}
+  .modalTcontent{display:flex;box-shadow:0 0 35px -10px #000;background:#fff;border-radius:17px;margin:auto;align-items:flex-start;overflow:hidden;height: calc(100vh - 120px);max-width: 813px;min-height: 600px;}
+  .modalRevieTestimoniales{display:none;position:fixed;z-index:999999;padding-top:80px;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:#000;background-color:rgba(0,0,0,0.6)}
+  .modalRevieTestimoniales .modal-content-Testimoniales{margin:auto;display:block;border-radius:2px}
+  .modalRevieTestimoniales .div-modal-content-TM{flex:1 1 55%;background:#ccc;height:100%;min-height:584px;background-position:center;background-size:contain;background-repeat:no-repeat;display:block!important}
+  .modalRevieTestimoniales #captionRevieTestimoniales{flex:1 1 45%;display:flex;flex-direction:column;padding:24px;justify-content:space-between;flex-direction:column;height: calc(100vh - 120px);color:#333}
+  .modalRevieTestimoniales .modal-content-Testimoniales,.modalRevieTestimoniales #captionRevieTestimoniales{-webkit-animation-name:zoom;-webkit-animation-duration:.6s;animation-name:zoom;animation-duration:.6s}
+  .modalRevieTestimoniales #captionRevieTestimoniales > div{text-align:left}
+  .modalRevieTestimoniales #captionRevieTestimoniales > div:nth-child(1) {overflow: auto;}
+  .modalRevieTestimoniales #captionRevieTestimoniales .tm-revie-comment{margin-top: 2rem;line-height: 22px;}
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  } 
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  .modalRevieTestimoniales .closeModalTestimoniales{position:absolute;top:15px;right:35px;color:#f1f1f1;font-size:40px;font-weight:700;transition:.3s}
+  .modalRevieTestimoniales .closeModalTestimoniales:hover,.modalRevieTestimoniales .closeModalTestimoniales:focus{color:#bbb;text-decoration:none;cursor:pointer}
+  @media only screen and (max-width: 700px) {
+  .modalRevieTestimoniales .modal-content-Testimoniales{max-width:100%}
+  .modalTcontent{flex-direction:column;max-width:90%;max-height:90%}
+  .modalRevieTestimoniales{padding-top:60px}
+  .modalRevieTestimoniales .div-modal-content-TM{width:100%;min-height:calc(50vh - 70px)}
+  .modalRevieTestimoniales #captionRevieTestimoniales{min-height:40vh;width:100%}
+  .modalRevieTestimoniales .closeModalTestimoniales{top:-20px;color:#f1f1f1;font-size:60px;right:5%}
+  }
+  .gridTestimoniales{position:relative}
+  .tm-revie-image img{width:100%}
+  .tm-revie-flex{display:flex;text-align: left;}
+  .tm-revie-flex.tm-revie-review > div:first-of-type{flex:1 0 {{ 100 | minus: section.settings.max_width_image }}%}
+  .tm-revie-flex.tm-revie-review > div:last-of-type{flex:1 0 {{ section.settings.max_width_image }}%}
+  .tm-revie-image-prod img{max-height:50px;margin:0 5px 0 0}
+  .tm-revie-customer{
+    display: flex;align-items: center;font-weight: bold;font-size: {{ section.settings.size_text | plus: 2 }}px;line-height: {{ section.settings.size_text | plus: 6 }}px;
+  }
+  .tm-revie-comment{font-size: {{ section.settings.size_text }}px;line-height: {{ section.settings.size_text | plus: 4 }}px;margin-bottom: 1rem;}
+  .tm-revie-prod{font-size: 14px;line-height: 16px;}
+  .testimoniales-item {box-shadow: 0 0 3px rgb(0 0 0 / 20%);padding: 10px;border-radius: 3px;margin-bottom: 1rem;cursor:pointer;color: {{ section.settings.text_color }};background: {{ section.settings.back_color }};}
+  .testimoniales-item:hover {background: #f8f8f8;}
+  hr.tm-revie-hr{border-top: solid 1px #e2e2e2;margin: 0px;}
+  .tm-revie-product{align-items: center;margin-top: 1rem;}
+  #revieListTestimoniales-content [data-star] {text-align:left;font-style:normal;display:inline-block;position: relative;unicode-bidi: bidi-override;}
+  #revieListTestimoniales-content [data-star]::before { display:block;content: '☆☆☆☆☆';color: {{ section.settings.star_color }};}
+  #revieListTestimoniales-content [data-star]::after {white-space:nowrap;position:absolute;top:0;left:0;content: '★★★★★';width: 0;color: {{ section.settings.star_color }};overflow:hidden;height:100%;}
+  #revieListTestimoniales-content [data-star^=".1"]::after,#revieListTestimoniales-content [data-star^="0.1"]::after{width:2%}#revieListTestimoniales-content [data-star^=".2"]::after,#revieListTestimoniales-content [data-star^="0.2"]::after{width:4%}#revieListTestimoniales-content [data-star^=".3"]::after,#revieListTestimoniales-content [data-star^="0.3"]::after{width:6%}#revieListTestimoniales-content [data-star^=".4"]::after,#revieListTestimoniales-content [data-star^="0.4"]::after{width:8%}#revieListTestimoniales-content [data-star^=".5"]::after,#revieListTestimoniales-content [data-star^="0.5"]::after{width:10%}#revieListTestimoniales-content [data-star^=".6"]::after,#revieListTestimoniales-content [data-star^="0.6"]::after{width:12%}#revieListTestimoniales-content [data-star^=".7"]::after,#revieListTestimoniales-content [data-star^="0.7"]::after{width:14%}#revieListTestimoniales-content [data-star^=".8"]::after,#revieListTestimoniales-content [data-star^="0.8"]::after{width:16%}#revieListTestimoniales-content [data-star^=".9"]::after,#revieListTestimoniales-content [data-star^="0.9"]::after{width:18%}#revieListTestimoniales-content [data-star^="1"]::after{width:20%}#revieListTestimoniales-content [data-star^="1.1"]::after{width:22%}#revieListTestimoniales-content [data-star^="1.2"]::after{width:24%}#revieListTestimoniales-content [data-star^="1.3"]::after{width:26%}#revieListTestimoniales-content [data-star^="1.4"]::after{width:28%}#revieListTestimoniales-content [data-star^="1.5"]::after{width:30%}#revieListTestimoniales-content [data-star^="1.6"]::after{width:32%}#revieListTestimoniales-content [data-star^="1.7"]::after{width:34%}#revieListTestimoniales-content [data-star^="1.8"]::after{width:36%}#revieListTestimoniales-content [data-star^="1.9"]::after{width:38%}#revieListTestimoniales-content [data-star^="2"]::after{width:40%}#revieListTestimoniales-content [data-star^="2.1"]::after{width:42%}#revieListTestimoniales-content [data-star^="2.2"]::after{width:44%}#revieListTestimoniales-content [data-star^="2.3"]::after{width:46%}#revieListTestimoniales-content [data-star^="2.4"]::after{width:48%}#revieListTestimoniales-content [data-star^="2.5"]::after{width:50%}#revieListTestimoniales-content [data-star^="2.6"]::after{width:52%}#revieListTestimoniales-content [data-star^="2.7"]::after{width:54%}#revieListTestimoniales-content [data-star^="2.8"]::after{width:56%}#revieListTestimoniales-content [data-star^="2.9"]::after{width:58%}#revieListTestimoniales-content [data-star^="3"]::after{width:60%}#revieListTestimoniales-content [data-star^="3.1"]::after{width:62%}#revieListTestimoniales-content [data-star^="3.2"]::after{width:64%}#revieListTestimoniales-content [data-star^="3.3"]::after{width:66%}#revieListTestimoniales-content [data-star^="3.4"]::after{width:68%}#revieListTestimoniales-content [data-star^="3.5"]::after{width:70%}#revieListTestimoniales-content [data-star^="3.6"]::after{width:72%}#revieListTestimoniales-content [data-star^="3.7"]::after{width:74%}#revieListTestimoniales-content [data-star^="3.8"]::after{width:76%}#revieListTestimoniales-content [data-star^="3.9"]::after{width:78%}#revieListTestimoniales-content [data-star^="4"]::after{width:80%}#revieListTestimoniales-content [data-star^="4.1"]::after{width:82%}#revieListTestimoniales-content [data-star^="4.2"]::after{width:84%}#revieListTestimoniales-content [data-star^="4.3"]::after{width:86%}#revieListTestimoniales-content [data-star^="4.4"]::after{width:88%}#revieListTestimoniales-content [data-star^="4.5"]::after{width:90%}#revieListTestimoniales-content [data-star^="4.6"]::after{width:92%}#revieListTestimoniales-content [data-star^="4.7"]::after{width:94%}#revieListTestimoniales-content [data-star^="4.8"]::after{width:96%}#revieListTestimoniales-content [data-star^="4.9"]::after{width:98%}#revieListTestimoniales-content [data-star^="5"]::after{width:100%}
+  #revieListTestimoniales-content .titleRevie{font-size: {{ section.settings.size }}px;}
+  .titleTestimonials{font-size: {{ section.settings.title_size }}px;color: {{ section.settings.title_color }};text-align: {{ section.settings.title_pos }};}
+  #titleTestimonials{display: flex;align-items: center; margin-bottom: 2rem;}
+  #titleTestimonials .textTestimonial{margin-left: 1rem;font-size: 20px;font-weight: bold;}
+  #revieListTestimoniales-content #titleTestimonials .titleRevie{font-size: {{ section.settings.size | plus: 8 }}px;}
+</style> 
+{% endif %}
+{% schema %}
+{
+  "name": "Testimonials Revie",
+  "settings": [
+      {
+		  "type": "text",
+		  "id": "title",
+		  "label": {
+			"en": "Title",
+			"es": "Título"
+			},
+		  "default": "Reviews"
+		},
+        {
+		  "type": "color",
+		  "id": "title_color",
+		  "label": {
+			"en": "Title color",
+			"es": "Color del Titulo"
+			},
+		  "default": "#000000"
+		},
+		{
+		  "type": "range",
+		  "id": "title_size",
+		  "min": 16,
+		  "max": 80,
+		  "step": 1,
+		  "unit": "px",
+		  "label": "Title size",
+		  "default": 42
+		  },
+		{
+		  "type": "select",
+		  "id": "title_pos",
+		  "label": {
+			"en": "Title position",
+			"es": "Posición del título"
+			},
+		  "default": "left",
+		  "options": [
+			{
+			"value": "left",
+			  "label": {
+			  "en": "Left",
+			  "es": "Izquierda"
+			  }
+			},
+			{
+			  "value": "center",
+			  "label": {
+				"en": "Center",
+				"es": "Central"
+				}
+			},
+			{
+			  "value": "right",
+			  "label": {
+				"en": "Right",
+				"es": "Derecha"
+				}
+			}
+		   ]
+		  },
+      {
+		  "type": "select",
+		  "id": "showGeneralData",
+		  "label": {
+			"en": "Show Overview",
+			"es": "Mostrar Información general"
+			},
+		  "default": "1",
+		  "options": [
+			{
+			"value": "1",
+			  "label": {
+			  "en": "Yes",
+			  "es": "Si"
+			  }
+			},
+			{
+			  "value": "2",
+			  "label": {
+				"en": "No",
+				"es": "No"
+				}
+			}
+		   ]
+		  },
+      {
+		  "type": "text",
+		  "id": "title_stars",
+		  "label": {
+			"en": "Post-Star Text (Reviews)",
+			"es": "Texto post. a las estrellas (Reseñas)"
+			},
+		  "default": "Reviews"
+		},
+    {
+      "type": "header",
+      "content": "Star"
+    },
+    {
+		  "type": "color",
+		  "id": "star_color",
+		  "label": {
+			"en": "Star color",
+			"es": "Color de la estrella"
+			},
+		  "default": "#000000"
+		},
+		{
+		  "type": "range",
+		  "id": "size",
+		  "min": 12,
+		  "max": 35,
+		  "step": 1,
+		  "unit": "px",
+		  "label": "Stars size",
+		  "default": 15
+		  },
+    {
+      "type": "header",
+      "content": "Texto"
+    },
+    {
+		  "type": "color",
+		  "id": "back_color",
+		  "label": {
+			"en": "Background color",
+			"es": "Color de fondo"
+			},
+		  "default": "#ffffff"
+		},
+    {
+		  "type": "color",
+		  "id": "text_color",
+		  "label": {
+			"en": "Text color",
+			"es": "Color del texto"
+			},
+		  "default": "#121212"
+		},
+		{
+		  "type": "range",
+		  "id": "size_text",
+		  "min": 10,
+		  "max": 25,
+		  "step": 1,
+		  "unit": "px",
+		  "label": "Text size",
+		  "default": 14
+        },{
+		  "type": "range",
+		  "id": "lines",
+		  "min": 2,
+		  "max": 5,
+		  "step": 1,
+		  "unit": "l",
+		  "label": "Number of comments",
+		  "default": 3
+        },
+    {
+      "type": "header",
+      "content": "Reviews"
+    },
+		{
+		  "type": "range",
+		  "id": "max_reviews",
+		  "min": 5,
+		  "max": 20,
+		  "step": 1,
+		  "label": "Max reviews per page",
+		  "default": 10
+        },
+		{
+		  "type": "select",
+		  "id": "image",
+		  "label": {
+			"en": "Photos",
+			"es": "Fotos"
+			},
+		  "default": "2",
+		  "options": [
+			{
+			"value": "1",
+			  "label": {
+			  "en": "Product",
+			  "es": "Producto"
+			  }
+			},
+			{
+			  "value": "2",
+			  "label": {
+				"en": "Reviews",
+				"es": "Reviews"
+				}
+			},
+			{
+			  "value": "3",
+			  "label": {
+				"en": "Product & Reviews",
+				"es": "Productos & Reviews"
+				}
+			}
+		   ]
+		  },
+    {
+      "type": "header",
+      "content": "Settings"
+    },{
+		"type": "range",
+		"id": "max_width",
+		"min": 780,
+		"max": 2160,
+		"step": 60,
+		"unit": "px",
+		"label": "Max width",
+		"default": 900
+	},
+	{
+		"type": "range",
+		"id": "content_padding",
+		"min": 0,
+		"max": 80,
+		"step": 1,
+		"unit": "px",
+		"label": "Content padding",
+		"default": 22
+	},{
+		"type": "range",
+		"id": "max_width_image",
+		"min": 5,
+		"max": 80,
+		"step": 1,
+		"unit": "px",
+		"label": "Max width Image",
+		"default": 24
+	}
+  ],
+  "presets": [{
+    "name": "Testimonial Revie",
+    "category": "Store information"
+  }]
+} 
+{% endschema %}
