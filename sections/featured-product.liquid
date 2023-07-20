@@ -33,7 +33,7 @@
 <section class="color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %}">
   <div class="page-width section-{{ section.id }}-padding{% if section.settings.secondary_background %} isolate{% endif %}">
     <div class="featured-product product grid grid--1-col gradient color-{{ section.settings.color_scheme }}{% if section.settings.secondary_background == false %} isolate{% endif %} {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
-    {% if section.settings.best_seller and product.id == "7712012763356" %}
+    {% if section.settings.best_seller and product.handle == "compuerta-anti-inundaciones" %}
         <span class="best-seller-badge">MÁS VENDIDO</span>
       {% endif %}
       <div class="grid__item product__media-wrapper">
