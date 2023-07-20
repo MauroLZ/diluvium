@@ -55,7 +55,9 @@
             {{ "accessibility.skip_to_product_info" | t }}
           </a>
           <ul id="Slider-Gallery-{{ section.id }}" class="product__media-list contains-media grid grid--peek list-unstyled slider slider--mobile" role="list">
+            {% if product.id == "7712425017564" %}
             <span class="best-seller-badge">MÁS VENDIDO</span>
+            {% endif %}
             {%- liquid
               assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src'
               assign media_count = product.media.size
