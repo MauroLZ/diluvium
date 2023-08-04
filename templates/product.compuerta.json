@@ -181,6 +181,52 @@
         "title": "Conóce sus beneficios"
       }
     },
+    "1664340857518656b8": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "1664340857391c8213-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Opiniones de nuestros clientes<\/p>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "1664340857391c8213-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52,
+        "custom_classes": ""
+      }
+    },
+    "1657763808b3f8b86d": {
+      "type": "apps",
+      "blocks": {
+        "f287ced9-b804-4d66-ab5e-e61fdb53c0c3": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 10,
+            "hide_thumbnails": false,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "f287ced9-b804-4d66-ab5e-e61fdb53c0c3"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "165559400461daea26": {
       "type": "image-with-text",
       "blocks": {
@@ -440,57 +486,14 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "1664340857518656b8": {
-      "type": "rich-text",
-      "blocks": {
-        "1664340857391c8213-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Opiniones de nuestros clientes<\/p>",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "1664340857391c8213-0"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52,
-        "custom_classes": ""
-      }
-    },
-    "1657763808b3f8b86d": {
-      "type": "apps",
-      "blocks": {
-        "f287ced9-b804-4d66-ab5e-e61fdb53c0c3": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "settings": {
-            "only_photos": false,
-            "aggregated": false,
-            "limit": 10,
-            "hide_thumbnails": false,
-            "maxwidth": 1080
-          }
-        }
-      },
-      "block_order": [
-        "f287ced9-b804-4d66-ab5e-e61fdb53c0c3"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "main",
     "16560356898ae1145d",
     "16558473034b3491c8",
+    "1664340857518656b8",
+    "1657763808b3f8b86d",
     "165559400461daea26",
     "1655783509fd547d55",
     "165559473408662c2f",
@@ -498,8 +501,6 @@
     "1656190944597c906e",
     "165559485661c51286",
     "1655776452a9ea5d56",
-    "product-recommendations",
-    "1664340857518656b8",
-    "1657763808b3f8b86d"
+    "product-recommendations"
   ]
 }
