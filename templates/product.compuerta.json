@@ -5,15 +5,27 @@
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+          }
         },
         "7ce99c0a-da5f-4d50-8956-fec260c32935": {
           "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "settings": {}
+          "settings": {
+            "contentSize": 16,
+            "pattern": "",
+            "hideText": false,
+            "alignment": "",
+            "textColor": "",
+            "starColor": "",
+            "showAllReviews": false,
+            "looxOpenFloatingWidget": false,
+            "emptyRatingWidget": false
+          }
         },
         "price": {
           "type": "price",
-          "settings": {}
+          "settings": {
+          }
         },
         "a835acf8-678f-49cc-8ac1-eee5aa06cd80": {
           "type": "text",
@@ -37,7 +49,8 @@
         },
         "description": {
           "type": "description",
-          "settings": {}
+          "settings": {
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -53,12 +66,21 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
-          "settings": {}
+          "settings": {
+          }
         },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": false
+          }
+        },
+        "68fb42b8-00d0-40a7-9485-949ece3241d4": {
+          "type": "whatsapp_button",
+          "settings": {
+            "button_title": "",
+            "button_text": "Hablar con un asesor",
+            "button_url": "https:\/\/wa.link\/0wtdpq"
           }
         }
       },
@@ -73,7 +95,8 @@
         "variant_picker",
         "71ca7a88-0289-46b4-9df0-f0debd8916a9",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "68fb42b8-00d0-40a7-9485-949ece3241d4"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -151,7 +174,9 @@
         "471c4eb6-4b69-47cd-b350-78620f01814a",
         "cb459b7a-b41f-44ff-8a0d-4523569bdb22"
       ],
-      "custom_css": [],
+      "custom_css": [
+
+      ],
       "settings": {
         "title": "Conóce sus beneficios"
       }
