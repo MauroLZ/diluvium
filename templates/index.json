@@ -262,71 +262,8 @@
         "padding_bottom": 88
       }
     },
-    "1655432838ef615b55": {
-      "type": "image-with-text",
-      "blocks": {
-        "1655432838ee122841-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "¿Porqué comprar con nosotros?",
-            "heading_size": "h1"
-          }
-        },
-        "012ab737-4bca-4111-a9a6-cda4bb7d8ac5": {
-          "type": "icon",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/certificado-de-garantia.png",
-            "title": "Funcionamiento comprobado",
-            "description": "<p>Sometemos nuestros productos a las más duras pruebas para garantizar su calidad y así brindarte la solución definitiva ante inundaciones.<\/p>"
-          }
-        },
-        "b67bd3a5-5a9e-41e2-86e4-45134973fdce": {
-          "type": "icon",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/envio.png",
-            "title": "Garantía de devolución",
-            "description": "<p>Si la puerta que compraste no es del tamaño correcto, te aseguramos el envío del tamaño adecuado.<\/p>"
-          }
-        },
-        "dbb00631-8b31-48d3-8577-04313166d396": {
-          "type": "icon",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/ahorro_dinero.png",
-            "title": "Evita pérdidas económicas",
-            "description": "<p>No dejes que te pase lo mismo que en cada época de lluvias, protege tu patrimonio y a tu familia.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "1655432838ee122841-0",
-        "012ab737-4bca-4111-a9a6-cda4bb7d8ac5",
-        "b67bd3a5-5a9e-41e2-86e4-45134973fdce",
-        "dbb00631-8b31-48d3-8577-04313166d396"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Frame_248_ligero.png",
-        "background_color": "#f3f3f3",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "mobile_content_alignment": "center",
-        "padding_top": 72,
-        "padding_bottom": 0,
-        "classes": "porque-comprar"
-      }
-    },
-    "316e9bef-f4f3-4db1-bc72-13b038fd2407": {
-      "type": "table-best-option",
-      "settings": {
-        "title": "¿Por qué somos tu mejor opción?"
-      }
-    },
     "1664420068372bc560": {
       "type": "testimonials",
-      "disabled": true,
       "blocks": {
         "34f4a338-fb32-4b0a-a9a7-56defd037ee1": {
           "type": "testimonial",
@@ -412,6 +349,7 @@
         "162e8303-2bc7-4e99-8aba-83643c025eea",
         "f7e516cc-b003-46bc-8073-07f07faf35ed"
       ],
+      "disabled": true,
       "settings": {
         "title": "Lo que opinan nuestros clientes"
       }
@@ -445,7 +383,7 @@
         "content_alignment": "center",
         "color_scheme": "background-1",
         "full_width": true,
-        "padding_top": 72,
+        "padding_top": 20,
         "padding_bottom": 8,
         "custom_classes": ""
       }
@@ -593,6 +531,68 @@
       "settings": {
       }
     },
+    "1655432838ef615b55": {
+      "type": "image-with-text",
+      "blocks": {
+        "1655432838ee122841-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "¿Porqué comprar con nosotros?",
+            "heading_size": "h1"
+          }
+        },
+        "012ab737-4bca-4111-a9a6-cda4bb7d8ac5": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/certificado-de-garantia.png",
+            "title": "Funcionamiento comprobado",
+            "description": "<p>Sometemos nuestros productos a las más duras pruebas para garantizar su calidad y así brindarte la solución definitiva ante inundaciones.<\/p>"
+          }
+        },
+        "b67bd3a5-5a9e-41e2-86e4-45134973fdce": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/envio.png",
+            "title": "Garantía de devolución",
+            "description": "<p>Si la puerta que compraste no es del tamaño correcto, te aseguramos el envío del tamaño adecuado.<\/p>"
+          }
+        },
+        "dbb00631-8b31-48d3-8577-04313166d396": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/ahorro_dinero.png",
+            "title": "Evita pérdidas económicas",
+            "description": "<p>No dejes que te pase lo mismo que en cada época de lluvias, protege tu patrimonio y a tu familia.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1655432838ee122841-0",
+        "012ab737-4bca-4111-a9a6-cda4bb7d8ac5",
+        "b67bd3a5-5a9e-41e2-86e4-45134973fdce",
+        "dbb00631-8b31-48d3-8577-04313166d396"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Frame_248_ligero.png",
+        "background_color": "#f3f3f3",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "mobile_content_alignment": "center",
+        "padding_top": 72,
+        "padding_bottom": 0,
+        "classes": "porque-comprar"
+      }
+    },
+    "316e9bef-f4f3-4db1-bc72-13b038fd2407": {
+      "type": "table-best-option",
+      "settings": {
+        "title": "¿Por qué somos tu mejor opción?"
+      }
+    },
     "29f194d5-6ed2-4acb-98c4-60599001f49c": {
       "type": "multicolumn",
       "blocks": {
@@ -660,7 +660,6 @@
     },
     "bcd8b3a8-6688-4adb-8816-864f4b6f0a4c": {
       "type": "newsletter",
-      "disabled": true,
       "blocks": {
         "template--16139322786012__bcd8b3a8-6688-4adb-8816-864f4b6f0a4c-166554521459ff9de8-0": {
           "type": "heading",
@@ -686,6 +685,7 @@
         "template--16139322786012__bcd8b3a8-6688-4adb-8816-864f4b6f0a4c-166554521459ff9de8-1",
         "template--16139322786012__bcd8b3a8-6688-4adb-8816-864f4b6f0a4c-166554521459ff9de8-2"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "accent-1",
         "full_width": true,
@@ -717,13 +717,13 @@
     "6df8b523-1e6c-4da2-b89e-ee21166e1658",
     "3e9a5e97-2ecc-4480-b513-d3ab08f02d68",
     "featured_collection",
-    "1655432838ef615b55",
-    "316e9bef-f4f3-4db1-bc72-13b038fd2407",
     "1664420068372bc560",
     "56c39255-f588-4791-bb36-d7d5c9f7cb7d",
     "c76da3e3-0258-4b06-aef1-98a0f531a530",
     "1681668402596a5f60",
     "165558713225a8d0b6",
+    "1655432838ef615b55",
+    "316e9bef-f4f3-4db1-bc72-13b038fd2407",
     "29f194d5-6ed2-4acb-98c4-60599001f49c",
     "165543631478c9c8e0",
     "bcd8b3a8-6688-4adb-8816-864f4b6f0a4c",
