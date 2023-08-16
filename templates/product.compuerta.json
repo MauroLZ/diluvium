@@ -82,20 +82,6 @@
             "button_text": "Hablar con un asesor",
             "button_url": "https:\/\/wa.link\/0wtdpq"
           }
-        },
-        "3c8c7c5c-e0fd-49ad-a181-65f114c54458": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "settings": {
-            "contentSize": 16,
-            "pattern": "",
-            "hideText": false,
-            "alignment": "",
-            "textColor": "",
-            "starColor": "",
-            "showAllReviews": false,
-            "looxOpenFloatingWidget": false,
-            "emptyRatingWidget": false
-          }
         }
       },
       "block_order": [
@@ -110,8 +96,7 @@
         "71ca7a88-0289-46b4-9df0-f0debd8916a9",
         "quantity_selector",
         "buy_buttons",
-        "68fb42b8-00d0-40a7-9485-949ece3241d4",
-        "3c8c7c5c-e0fd-49ad-a181-65f114c54458"
+        "68fb42b8-00d0-40a7-9485-949ece3241d4"
       ],
       "settings": {
         "enable_sticky_info": true,
