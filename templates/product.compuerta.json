@@ -250,7 +250,7 @@
             "aggregated": false,
             "limit": 9,
             "hide_thumbnails": false,
-            "maxwidth": 720
+            "maxwidth": 1000
           }
         }
       },
