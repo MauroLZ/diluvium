@@ -107,6 +107,7 @@
         "template--16824071520476__c570d919-4de5-490c-bd32-ef7a2e779b05-168516041509fb5a80-1",
         "template--16824071520476__c570d919-4de5-490c-bd32-ef7a2e779b05-168516041509fb5a80-2"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -159,9 +160,18 @@
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "mobile_content_alignment": "center",
-        "padding_top": 40,
-        "padding_bottom": 80,
+        "padding_top": 60,
+        "padding_bottom": 0,
         "classes": "has-vivido-inundacion"
+      }
+    },
+    "83c0ef20-8e5e-43c6-8949-6787711c9a0f": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"elfsight-sapp-0dbb9617-6466-417e-a4e3-7b749af3eb7a\"><\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "6df8b523-1e6c-4da2-b89e-ee21166e1658": {
@@ -714,6 +724,7 @@
     "1655186926c306d030",
     "c570d919-4de5-490c-bd32-ef7a2e779b05",
     "16551872299b5550ca",
+    "83c0ef20-8e5e-43c6-8949-6787711c9a0f",
     "6df8b523-1e6c-4da2-b89e-ee21166e1658",
     "3e9a5e97-2ecc-4480-b513-d3ab08f02d68",
     "featured_collection",
