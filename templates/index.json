@@ -380,8 +380,8 @@
         "template--16139322786012__c76da3e3-0258-4b06-aef1-98a0f531a530-1681669262a252d5be-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p><strong>Personas y empresas que confían en nosotros<\/strong><\/p>",
-            "heading_size": "h2"
+            "heading": "<h1>Personas y empresas que confían en nosotros<\/h1>",
+            "heading_size": "h1"
           }
         }
       },
