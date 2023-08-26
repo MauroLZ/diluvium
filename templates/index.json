@@ -559,14 +559,6 @@
             "description": "<p>Sometemos nuestros productos a las más duras pruebas para garantizar su calidad y así brindarte la solución definitiva ante inundaciones.<\/p>"
           }
         },
-        "b67bd3a5-5a9e-41e2-86e4-45134973fdce": {
-          "type": "icon",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/envio.png",
-            "title": "Garantía de devolución",
-            "description": "<p>Si la puerta que compraste no es del tamaño correcto, te aseguramos el envío del tamaño adecuado.<\/p>"
-          }
-        },
         "dbb00631-8b31-48d3-8577-04313166d396": {
           "type": "icon",
           "settings": {
@@ -574,13 +566,21 @@
             "title": "Evita pérdidas económicas",
             "description": "<p>No dejes que te pase lo mismo que en cada época de lluvias, protege tu patrimonio y a tu familia.<\/p>"
           }
+        },
+        "b67bd3a5-5a9e-41e2-86e4-45134973fdce": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/envio.png",
+            "title": "Garantía de devolución",
+            "description": "<p>Si la puerta que compraste no es del tamaño correcto, te aseguramos el envío del tamaño adecuado.<\/p>"
+          }
         }
       },
       "block_order": [
         "1655432838ee122841-0",
         "012ab737-4bca-4111-a9a6-cda4bb7d8ac5",
-        "b67bd3a5-5a9e-41e2-86e4-45134973fdce",
-        "dbb00631-8b31-48d3-8577-04313166d396"
+        "dbb00631-8b31-48d3-8577-04313166d396",
+        "b67bd3a5-5a9e-41e2-86e4-45134973fdce"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_248_ligero.png",
@@ -652,7 +652,7 @@
         "columns_desktop": 3,
         "column_alignment": "center",
         "show_steps": false,
-        "background_style": "primary",
+        "background_style": "none",
         "button_label": "",
         "button_link": "",
         "color_scheme": "accent-1",
