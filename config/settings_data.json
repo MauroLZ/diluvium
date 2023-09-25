@@ -99,8 +99,8 @@
     "currency_code_enabled": false,
     "cart_type": "notification",
     "checkout_logo_image": "shopify:\/\/shop_images\/Logo_Diluvium_chico.png",
-    "checkout_logo_position": "left",
-    "checkout_logo_size": "medium",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "large",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
