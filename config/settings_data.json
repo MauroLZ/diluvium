@@ -98,6 +98,9 @@
     "favicon": "shopify:\/\/shop_images\/Favicon_2aabf220-4641-4694-9dbb-be135ad53af1.png",
     "currency_code_enabled": false,
     "cart_type": "notification",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Logo_Diluvium_chico.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
