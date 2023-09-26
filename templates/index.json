@@ -402,8 +402,30 @@
     "1681668402596a5f60": {
       "type": "apps",
       "blocks": {
+        "f16f5f7b-a196-443b-a7ad-5f2470cbbb20": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-trust-badge\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "layout": "horizontal-slim",
+            "alignment": "fillContainer",
+            "scheme-type": "default",
+            "review-title": "reseñas",
+            "rating-icon": true,
+            "average-rating": true,
+            "review-count": true,
+            "open-reviews": true,
+            "show-border": false,
+            "border-radius": 8,
+            "font-size": 26,
+            "background-color": "",
+            "secondary-background-color": "",
+            "text-color": "",
+            "rating-icon-color": "",
+            "border-color": ""
+          }
+        },
         "ff2ddcfa-38ea-40a5-b220-869154882b44": {
           "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-gallery-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "disabled": true,
           "settings": {
             "maxWidth": 1570,
             "borderRadius": 8,
@@ -417,12 +439,36 @@
             "border_active": false,
             "border_width": 6,
             "border_color": "#0a559a",
-            "productIds": ""
+            "productIds": "compuerta-anti-inundaciones"
+          }
+        },
+        "50ba51a4-c9d7-4e1e-95c4-43af2db8368c": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-card-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "maxWidth": 1100,
+            "borderRadius": 8,
+            "itemsPerView": 4,
+            "maxNumberOfCharacters": 100,
+            "imageRatio": "1.25",
+            "reviewerNameColor": "#000000",
+            "textColor": "#000000",
+            "itemBackgroundColor": "#ffffff",
+            "starsColor": "",
+            "starsBackgroundColor": "#ffffff",
+            "arrows_backgroundColor": "#FFFFFF",
+            "arrows_iconColor": "#9A9A9A",
+            "shadow": "offset-dark",
+            "border_active": false,
+            "border_width": 2,
+            "border_color": "#000000",
+            "productIds": "compuerta-anti-inundaciones"
           }
         }
       },
       "block_order": [
-        "ff2ddcfa-38ea-40a5-b220-869154882b44"
+        "f16f5f7b-a196-443b-a7ad-5f2470cbbb20",
+        "ff2ddcfa-38ea-40a5-b220-869154882b44",
+        "50ba51a4-c9d7-4e1e-95c4-43af2db8368c"
       ],
       "settings": {
         "include_margins": false
