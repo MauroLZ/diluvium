@@ -141,8 +141,8 @@
         "1655187229070991b2-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Según Forbes, más de <strong>22 millones de  Mexicanos<\/strong> sufren de inundaciones cada año.<\/p><p>Si tu también sufres de estos desastres, no te preocupes, hemos reunido y probado lo que necesitas para protegerte.<\/p><p>Con nuestras soluciones ante inundaciones podrás bloquear tus puertas, ventanas y tuberías, y evitar que el agua de lluvias entre a tu hogar o negocio, poniendo en riesgo tu patrimonio y a tu familia.<\/p>",
-            "text_style": "body"
+            "text": "<p>¿Alguna vez te has sentido vulnerable ante inundaciones que parecen acechar tu hogar sin previo aviso? No estás solo. Cada año, más de <strong>22 millones de mexicanos sufrimos esta amenaza<\/strong>. <br\/><br\/>Pero aquí hay buenas noticias: hemos descubierto una <strong>verdadera solución<\/strong>.<br\/><br\/>Un sistema que cambiará tu forma de enfrentar estos desastres naturales de manera eficiente. ¿Imaginas proteger tus puertas, ventanas y tuberías de manera fácil y rápida cuando se avecina una tormenta?<br\/><br\/>Conoce más sobre este sistema que está transformando vidas. Toma el control y recupera la paz mental que te mereces con productos confiables y efectivos. La seguridad de tu hogar y tu negocio está en tus manos.<\/p>",
+            "text_style": "subtitle"
           }
         }
       },
@@ -155,7 +155,7 @@
         "background_color": "#f3f3f3",
         "height": "adapt",
         "desktop_image_width": "medium",
-        "layout": "image_first",
+        "layout": "text_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
