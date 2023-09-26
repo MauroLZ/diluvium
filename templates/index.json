@@ -194,7 +194,7 @@
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 84,
-        "padding_bottom": 56,
+        "padding_bottom": 12,
         "custom_classes": ""
       }
     },
@@ -406,7 +406,7 @@
           "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-trust-badge\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "layout": "horizontal-slim",
-            "alignment": "fillContainer",
+            "alignment": "center",
             "scheme-type": "default",
             "review-title": "reseñas",
             "rating-icon": true,
@@ -414,7 +414,7 @@
             "review-count": true,
             "open-reviews": true,
             "show-border": false,
-            "border-radius": 8,
+            "border-radius": 0,
             "font-size": 26,
             "background-color": "",
             "secondary-background-color": "",
@@ -445,15 +445,15 @@
         "50ba51a4-c9d7-4e1e-95c4-43af2db8368c": {
           "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-card-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
-            "maxWidth": 1100,
+            "maxWidth": 1450,
             "borderRadius": 8,
-            "itemsPerView": 4,
+            "itemsPerView": 5,
             "maxNumberOfCharacters": 100,
             "imageRatio": "1.25",
             "reviewerNameColor": "#000000",
             "textColor": "#000000",
             "itemBackgroundColor": "#ffffff",
-            "starsColor": "",
+            "starsColor": "#2e2d2d",
             "starsBackgroundColor": "#ffffff",
             "arrows_backgroundColor": "#FFFFFF",
             "arrows_iconColor": "#9A9A9A",
