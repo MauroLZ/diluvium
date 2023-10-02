@@ -283,6 +283,7 @@
         "1655594004156d2dbc-0",
         "1655594004156d2dbc-1"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_248_ligero.png",
         "background_color": "#f3f3f3",
@@ -302,6 +303,65 @@
       "type": "table-best-option",
       "settings": {
         "title": "¿Por qué somos tu mejor opción?"
+      }
+    },
+    "165559485661c51286": {
+      "type": "multicolumn",
+      "blocks": {
+        "165559485617fe707e-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/entrega_1.png",
+            "title": "Envíos Gratis",
+            "text": "<p>Recibe tu producto sin costo en pedidos mayores a $499<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "165559485617fe707e-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/garantia_2.png",
+            "title": "Garantía de funcionamiento",
+            "text": "<p>Todos nuestros están grantizados <\/p><p>por 4 años<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "165559485617fe707e-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tarjeta-de-credito.png",
+            "title": "Compra Segura",
+            "text": "<p>Protegemos tus datos personales  en todo momento<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "165559485617fe707e-0",
+        "165559485617fe707e-1",
+        "165559485617fe707e-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "enable_custom_image_width": true,
+        "image_width_custom": 50,
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "show_steps": false,
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "accent-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 28
       }
     },
     "165559473408662c2f": {
@@ -371,65 +431,6 @@
       "settings": {
         "image_title": "Dimensiones",
         "image": "shopify:\/\/shop_images\/Frame_168.png"
-      }
-    },
-    "165559485661c51286": {
-      "type": "multicolumn",
-      "blocks": {
-        "165559485617fe707e-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/entrega_1.png",
-            "title": "Envíos Gratis",
-            "text": "<p>Recibe tu producto sin costo en pedidos mayores a $499<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "165559485617fe707e-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/garantia_2.png",
-            "title": "Garantía de funcionamiento",
-            "text": "<p>Todos nuestros están grantizados <\/p><p>por 4 años<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "165559485617fe707e-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/tarjeta-de-credito.png",
-            "title": "Compra Segura",
-            "text": "<p>Protegemos tus datos personales  en todo momento<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "165559485617fe707e-0",
-        "165559485617fe707e-1",
-        "165559485617fe707e-2"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "enable_custom_image_width": true,
-        "image_width_custom": 50,
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "show_steps": false,
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "accent-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 28
       }
     },
     "1655776452a9ea5d56": {
@@ -531,10 +532,10 @@
     "1657763808b3f8b86d",
     "165559400461daea26",
     "1655783509fd547d55",
+    "165559485661c51286",
     "165559473408662c2f",
     "1655594475ae361a70",
     "1656190944597c906e",
-    "165559485661c51286",
     "1655776452a9ea5d56",
     "product-recommendations"
   ]
