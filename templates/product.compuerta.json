@@ -146,17 +146,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Reemplazo_GIF_1.jpg",
             "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/efd12cd740734c9b9c1a67c14a663e96.mp4",
-            "title": "¡Olvídate de los molestos sacos de arena!",
-            "text": "Por su diseño cualquier persona la puede instalar de manera sencilla, en tan sólo 10 minutos estarás protegido ante inundaciones."
-          }
-        },
-        "471c4eb6-4b69-47cd-b350-78620f01814a": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Reemplazo_GIF_2.jpg",
-            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/7ffe973c8b3c4138ae324c643091d467.mp4",
-            "title": "Ni una gota de agua entrará a tu hogar o negocio",
-            "text": "Hecha especialmente para resistir flujos de hasta 50cm de agua y fuertes golpes."
+            "title": "1) Olvídate de los pesados sacos de arena",
+            "text": "Nuestra compuerta reemplaza los sacos de arena de forma ligera y eficiente. Sellando herméticamente el contorno, es reutilizable y respetuosa con el medio ambiente."
           }
         },
         "cb459b7a-b41f-44ff-8a0d-4523569bdb22": {
@@ -164,21 +155,30 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Reemplazo_GIF_3.jpg",
             "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/f40730b0216243b99969eb340c33853b.mp4",
-            "title": "Se adapta a tu entrada",
-            "text": "Gracias a su diseño, la compuerta se expande hasta sellar por completo el contorno de tu entrada, bloqueando totalmente el paso de agua de manera sencilla."
+            "title": "2) Se adapta a tu entrada",
+            "text": "A comparación de otros métodos, la compuerta se expande hasta sellar perfectamente tu entrada, bloqueando totalmente el paso de agua de manera eficiente."
+          }
+        },
+        "471c4eb6-4b69-47cd-b350-78620f01814a": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Reemplazo_GIF_2.jpg",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/7ffe973c8b3c4138ae324c643091d467.mp4",
+            "title": "3) Durabilidad por 5 años",
+            "text": "Invierte en seguridad a largo plazo. Nuestra barrera tiene una vida útil estimada de 5 años, brindándote protección confiable sin la necesidad constante de reemplazarla."
           }
         }
       },
       "block_order": [
         "20dba327-a350-405d-9467-9fd87bc5c3a7",
-        "471c4eb6-4b69-47cd-b350-78620f01814a",
-        "cb459b7a-b41f-44ff-8a0d-4523569bdb22"
+        "cb459b7a-b41f-44ff-8a0d-4523569bdb22",
+        "471c4eb6-4b69-47cd-b350-78620f01814a"
       ],
       "custom_css": [
 
       ],
       "settings": {
-        "title": "Conóce sus beneficios"
+        "title": "¿Cuáles son las ventajas?"
       }
     },
     "1691894345666c2321": {
