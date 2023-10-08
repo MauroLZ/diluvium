@@ -52,8 +52,8 @@
         "39190ca7-9c76-4f9a-a3b0-5e39b817767d"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_con_agua_310f2949-5bfb-4c76-9fd1-c2a0d76b0bb5.png",
-        "image_mobile": "shopify:\/\/shop_images\/Hero_nuevo_mobile.png",
+        "image": "shopify:\/\/shop_images\/Hero_Desktop.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Hero_Mobile.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": true,
@@ -151,7 +151,7 @@
         "1655187229070991b2-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/6_1_1.png",
+        "image": "shopify:\/\/shop_images\/Descripcion.jpg",
         "background_color": "#f3f3f3",
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -455,8 +455,8 @@
             "itemBackgroundColor": "#ffffff",
             "starsColor": "#2e2d2d",
             "starsBackgroundColor": "#ffffff",
-            "arrows_backgroundColor": "#FFFFFF",
-            "arrows_iconColor": "#9A9A9A",
+            "arrows_backgroundColor": "#ffffff",
+            "arrows_iconColor": "#9a9a9a",
             "shadow": "offset-dark",
             "border_active": false,
             "border_width": 2,
@@ -630,7 +630,7 @@
         "b67bd3a5-5a9e-41e2-86e4-45134973fdce"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Frame_248_ligero.png",
+        "image": "shopify:\/\/shop_images\/Porque_comprar_con_nosotros.jpg",
         "background_color": "#f3f3f3",
         "height": "adapt",
         "desktop_image_width": "medium",
