@@ -1,1 +1,51 @@
-{"sections":{"1656614580dfafb6b0":{"type":"image-banner","blocks":{"16566145805c932922-0":{"type":"heading","settings":{"heading":"¿Necesitas protegerte de inundaciones? Aquí te decimos cómo","heading_size":"h1"}}},"block_order":["16566145805c932922-0"],"settings":{"image":"shopify:\/\/shop_images\/AdobeStock_168614269_1_2.jpg","image_overlay_opacity":0,"image_height":"medium","adapt_height_first_image":false,"adapt_height_first_image_mobile":false,"desktop_content_position":"middle-left","show_text_box":false,"desktop_content_alignment":"center","color_scheme":"background-1","mobile_content_alignment":"center","stack_images_on_mobile":true,"show_text_below":true,"custom_classes":"custom-image-banner"}},"main":{"type":"main-blog","settings":{"description":"Compartimos consejos para solucionar diferentes problemas de inundaciones","layout":"grid","show_image":true,"image_height":"adapt","show_date":true,"show_author":false,"padding_top":36,"padding_bottom":36}}},"order":["1656614580dfafb6b0","main"]}
+{
+  "sections": {
+    "1656614580dfafb6b0": {
+      "type": "image-banner",
+      "blocks": {
+        "16566145805c932922-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "¿Necesitas protegerte de inundaciones? Aquí te decimos cómo",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "16566145805c932922-0"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Blog.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "adapt_height_first_image_mobile": false,
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "custom_classes": "custom-image-banner"
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "description": "Compartimos consejos para solucionar diferentes problemas de inundaciones",
+        "layout": "grid",
+        "show_image": true,
+        "image_height": "adapt",
+        "show_date": true,
+        "show_author": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "1656614580dfafb6b0",
+    "main"
+  ]
+}
